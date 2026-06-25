@@ -2,11 +2,11 @@
 
 <nav class="navbar">
   <a href="/" class="logo-link">
-    <img src="/assets/images/navicon.png" alt="Company Logo" class="logo" />
+    <img src="../assets/images/navicon.png" alt="Company Logo" class="logo" />
   </a>
 
   <div class="nav-links">
-    <a href="/about/">About Us</a>
+    <a href="../about/">About Us</a>
 
     <div class="dropdown">
       <button class="dropdown-btn">
@@ -15,325 +15,72 @@
       </button>
 
       <div class="dropdown-menu">
-        <a href="/services/converter-refurbishment/">
+        <a href="../services/converter-refurbishment/">
           Converter Refurbishment
         </a>
 
-        <div class="submenu-container">
-          <a href="/services/test-bench-solutions/" class="submenu-trigger">
-            Test Bench Solutions
-          </a>
+        <a href="../services/test-bench-solutions/"> Test Bench Solutions </a>
 
-          <div class="submenu">
-            <a href="/services/custom-test-benches/"> Custom Test Benches </a>
-
-            <a href="/services/existing-bench-modernization/">
-              Existing Bench Modernization
-            </a>
-
-            <a href="/services/validation-fat/"> Validation & FAT </a>
-          </div>
-        </div>
-
-        <a href="/services/renewable-energy-services/">
+        <a href="../services/renewable-energy-services/">
           Renewable Energy Services
         </a>
 
-        <a href="/services/technical-consulting/"> Technical Consulting </a>
+        <a href="../services/technical-consulting/"> Technical Consulting </a>
 
-        <a href="/services/marine-engineering/"> Marine Engineering </a>
+        <a href="../services/marine-engineering/"> Marine Engineering </a>
       </div>
     </div>
   </div>
 
-  <button id="nav-contact">Contact Us</button>
+  <a href="../contact-us/" id="nav-contact">Contact Us</a>
+
+  <button class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </nav>
 
+<div class="mobile-overlay"></div>
+
+<div class="mobile-pane">
+  <button class="close-menu">✕</button>
+
+  <!-- ================= MAIN MENU ================= -->
+
+  <div class="mobile-page active" id="mainMenu">
+    <a href="../about/"> About Us </a>
+
+    <button class="menu-btn" id="servicesBtn">
+      <span>Our Services</span>
+
+      <span>></span>
+    </button>
+
+    <a href="../contact/"> Contact Us </a>
+  </div>
+
+  <!-- ================= SERVICES ================= -->
+
+  <div class="mobile-page" id="servicesMenu">
+    <button class="back-btn" id="back1">
+      <span><</span>
+
+      <span>Back</span>
+    </button>
+
+    <a href="../services/converter-refurbishment/"> Converter Refurbishment </a>
+
+    <a href="../services/renewable-energy-services/">
+      Renewable Energy Services
+    </a>
+
+    <a href="../services/technical-consulting/"> Technical Consulting </a>
+
+    <a href="../services/test-bench-solutions/"> Test Bench Solutions </a>
+
+    <a href="../services/marine-engineering/"> Marine Engineering </a>
+  </div>
+</div>
+
 <!----------------------------------END NAVBAR--------------------->
-
-<!-- CSS -->
-
-<style>
-  /* 
-   --------------Navbar CSS----------
- */
-  .navbar {
-    position: relative;
-
-    height: 90px;
-
-    padding: 0 4rem;
-
-    display: flex;
-    align-items: center;
-
-    background: white;
-    border-bottom: 1px solid #e5e7eb;
-  }
-  /* 
-   Logo
- */
-
-  .logo-link {
-    display: flex;
-    align-items: center;
-  }
-
-  .logo {
-    height: 80px; /* try 70-75px */
-    width: auto;
-    display: block;
-  }
-  /* 
-   Navigation Links
- */
-
-  .nav-links {
-    position: absolute;
-
-    left: 50%;
-    transform: translateX(-50%);
-
-    display: flex;
-    gap: 2rem;
-  }
-  .nav-links a {
-    text-decoration: none;
-
-    color: var(--darkGray);
-
-    font-size: 15px;
-
-    font-weight: 500;
-
-    transition: var(--transition);
-  }
-
-  .nav-links a:hover {
-    color: var(--deepBlue);
-  }
-
-  /* 
-   Dropdown
- */
-
-  .dropdown {
-    position: relative;
-  }
-
-  .dropdown-btn {
-    background: none;
-
-    border: none;
-
-    padding: 0;
-
-    cursor: pointer;
-
-    font-size: 15px;
-
-    font-weight: 500;
-
-    color: var(--darkGray);
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 6px;
-
-    transition: var(--transition);
-  }
-
-  .dropdown-btn:hover {
-    color: var(--deepBlue);
-  }
-
-  /* 
-   Dropdown Menu
- */
-
-  .dropdown-menu {
-    position: absolute;
-
-    top: 100%;
-    left: 0;
-
-    margin-top: 8px;
-
-    min-width: 280px;
-
-    background: white;
-
-    border-radius: 8px;
-
-    padding: 10px 0;
-
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-
-    opacity: 0;
-
-    visibility: hidden;
-
-    transform: translateY(10px);
-
-    transition: 0.25s ease;
-
-    z-index: 1000;
-  }
-  .dropdown::after {
-    content: "";
-
-    position: absolute;
-
-    top: 100%;
-    left: 0;
-
-    width: 100%;
-
-    height: 12px;
-  }
-
-  .dropdown:hover .dropdown-menu {
-    opacity: 1;
-
-    visibility: visible;
-
-    transform: translateY(0);
-  }
-
-  /* Dropdown Links */
-
-  .dropdown-menu a {
-    display: block;
-
-    padding: 14px 22px;
-
-    text-decoration: none;
-
-    color: var(--darkGray);
-
-    font-size: 14px;
-
-    transition: var(--transition);
-  }
-
-  .dropdown-menu a:hover {
-    background: var(--lightGray);
-
-    color: var(--deepBlue);
-  }
-
-  /* Sub Menu */
-
-  .submenu {
-    position: absolute;
-
-    top: 0;
-
-    left: 100%;
-
-    margin-left: 8px;
-
-    min-width: 280px;
-
-    background: white;
-
-    border-radius: 8px;
-
-    padding: 10px 0;
-
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-
-    opacity: 0;
-
-    visibility: hidden;
-
-    transform: translateX(10px);
-
-    transition: 0.25s ease;
-  }
-
-  .submenu-container {
-    position: relative;
-  }
-
-  .submenu-trigger {
-    display: flex !important;
-
-    justify-content: space-between;
-
-    align-items: center;
-  }
-
-  .submenu-container:hover .submenu {
-    opacity: 1;
-
-    visibility: visible;
-
-    transform: translateX(0);
-  }
-
-  .submenu-container::after {
-    content: "";
-
-    position: absolute;
-
-    top: 0;
-
-    right: -10px;
-
-    width: 10px;
-
-    height: 100%;
-  }
-  .submenu a:hover {
-    background: #f5f7fa;
-
-    color: var(--deepBlue);
-  }
-  /*Contact Button*/
-
-  #nav-contact {
-    margin-left: auto;
-
-    padding: 12px 24px;
-
-    background: var(--electricGreen);
-    color: white;
-
-    border: none;
-    border-radius: 6px;
-
-    font-weight: 600;
-  }
-
-  #nav-contact:hover {
-    background: #2f9638;
-
-    transform: translateY(-2px);
-  }
-
-  /* 
-   Responsive
- */
-
-  @media (max-width: 900px) {
-    .navbar {
-      padding: 0 2rem;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
-    }
-
-    #nav-contact {
-      display: none;
-    }
-  }
-  /* 
-   --------------End Navbar CSS----------
- */
-</style>

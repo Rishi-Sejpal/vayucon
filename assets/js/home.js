@@ -26,14 +26,11 @@ const overlay = document.querySelector(".mobile-overlay");
 // Pages
 const mainMenu = document.getElementById("mainMenu");
 const servicesMenu = document.getElementById("servicesMenu");
-const tbMenu = document.getElementById("tbMenu");
 
 // Buttons
 const servicesBtn = document.getElementById("servicesBtn");
-const tbBtn = document.getElementById("tbBtn");
 
 const back1 = document.getElementById("back1");
-const back2 = document.getElementById("back2");
 
 // ---------------- Functions ----------------
 
@@ -91,20 +88,6 @@ back1.addEventListener("click", () => {
   mainMenu.classList.add("active");
 });
 
-tbBtn.addEventListener("click", () => {
-  servicesMenu.classList.remove("active");
-
-  tbMenu.classList.add("active");
-});
-
-// ---------------- Test Bench ----------------
-
-back2.addEventListener("click", () => {
-  tbMenu.classList.remove("active");
-
-  servicesMenu.classList.add("active");
-});
-
 // ---------------- Escape Key ----------------
 
 document.addEventListener("keydown", (event) => {
@@ -114,6 +97,7 @@ document.addEventListener("keydown", (event) => {
 });
 
 document.querySelectorAll(".card").forEach((element) => {
+  console.log(element);
   element.addEventListener("click", (event) => {
     window.location.href = element.childNodes[5].href;
   });
