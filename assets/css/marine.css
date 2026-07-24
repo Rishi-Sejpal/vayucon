@@ -1,0 +1,814 @@
+/*==========================================
+    TECHNICAL CONSULTING
+==========================================*/
+
+#content {
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/*==========================================
+    HERO
+==========================================*/
+
+.consulting-hero {
+  padding: 170px 8% 120px;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(60, 176, 67, 0.08),
+      transparent 40%
+    ),
+    linear-gradient(180deg, #f8fbfd 0%, #ffffff 100%);
+  position: relative;
+}
+
+.consulting-hero::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: rgba(0, 59, 109, 0.05);
+  top: -180px;
+  right: -120px;
+  filter: blur(10px);
+}
+
+.hero-content {
+  max-width: 1350px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.hero-left h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1.05;
+  font-family: "Noto Serif", serif;
+  color: #16304d;
+  margin: 18px 0 30px;
+}
+
+.hero-left h1 span {
+  color: #3cb043;
+}
+
+.hero-description {
+  font-size: 1.08rem;
+  line-height: 1.9;
+  color: #596775;
+  max-width: 650px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  margin-top: 45px;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 15px 34px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.35s;
+}
+
+.primary-btn {
+  background: #003b6d;
+  color: white;
+}
+
+.primary-btn:hover {
+  border-color: #00a651;
+  color: #00a651;
+  transform: translateY(-4px);
+}
+
+.secondary-btn {
+  border: 2px solid #003b6d;
+  color: #003b6d;
+  background: white;
+}
+
+.secondary-btn:hover {
+  background: #003b6d;
+  color: white;
+}
+
+.hero-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  align-self: center;
+}
+
+.stat-card {
+  background: #ffffff;
+  padding: 42px 32px;
+  border-radius: 26px;
+  border: 1px solid #edf2f6;
+  text-align: center;
+  transition: 0.35s ease;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card h2 {
+  font-family: "Noto Serif", serif;
+  font-size: 2rem;
+  color: #003b6d;
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+
+.stat-card p {
+  color: #667684;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+.hero-feature-grid {
+  max-width: 1350px;
+  margin: 80px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.feature-card {
+  display: flex;
+  gap: 18px;
+  padding: 28px;
+  background: white;
+  border-radius: 22px;
+  border: 1px solid #edf2f6;
+  transition: 0.35s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 18px;
+  background: rgba(60, 176, 67, 0.12);
+  color: #3cb043;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-icon span {
+  font-size: 30px;
+}
+
+.feature-card h3 {
+  color: #16304d;
+  margin-bottom: 10px;
+  font-size: 1.15rem;
+}
+
+.feature-card p {
+  color: #667684;
+  line-height: 1.75;
+  font-size: 0.95rem;
+}
+/*==========================================
+    SECTION HEADINGS
+==========================================*/
+
+.section-heading {
+  max-width: 760px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background: rgba(60, 176, 67, 0.1);
+  color: #3cb043;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.section-heading h2,
+.overview-left h2,
+.expertise-content h2 {
+  margin-top: 20px;
+  margin-bottom: 24px;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  line-height: 1.15;
+  font-family: "Noto Serif", serif;
+  color: #16304d;
+}
+
+.section-heading p,
+.overview-left p,
+.expertise-content p {
+  color: #667684;
+  line-height: 1.9;
+  font-size: 1rem;
+}
+
+/*==========================================
+    OVERVIEW
+==========================================*/
+
+.consulting-overview {
+  max-width: 1350px;
+  margin: 120px auto;
+  padding: 0 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.overview-left p {
+  margin-bottom: 22px;
+}
+
+.overview-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.highlight-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 22px;
+  border: 1px solid #edf2f6;
+  transition: 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: #3cb043;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.35s;
+}
+
+.highlight-card:hover::before {
+  transform: scaleY(1);
+}
+
+.highlight-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-card h3 {
+  color: #16304d;
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+}
+
+.highlight-card p {
+  color: #667684;
+  line-height: 1.8;
+  font-size: 0.96rem;
+}
+
+/*==========================================
+    SERVICES
+==========================================*/
+
+.consulting-services {
+  padding: 120px 8%;
+  background: #f7fafc;
+}
+
+.services-grid {
+  max-width: 1350px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 36px;
+  border: 1px solid #edf2f6;
+  transition: 0.35s ease;
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.service-card span {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(0, 59, 109, 0.08);
+  color: #003b6d;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  color: #16304d;
+  margin-bottom: 16px;
+}
+
+.service-card p {
+  color: #667684;
+  line-height: 1.8;
+  font-size: 0.97rem;
+}
+/*==========================================
+    EXPERTISE
+==========================================*/
+
+.expertise-section {
+  max-width: 1350px;
+  margin: 120px auto;
+  padding: 0 8%;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.expertise-content {
+  position: sticky;
+  top: 120px;
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.expertise-item {
+  background: #ffffff;
+  border: 1px solid #edf2f6;
+  border-radius: 24px;
+  padding: 34px;
+  transition: 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.expertise-item::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 4px;
+  background: #3cb043;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.35s;
+}
+
+.expertise-item:hover::after {
+  transform: scaleX(1);
+}
+
+.expertise-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+.expertise-item h3 {
+  color: #16304d;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+.expertise-item p {
+  color: #667684;
+  line-height: 1.8;
+  font-size: 0.96rem;
+}
+
+/*==========================================
+    PROCESS
+==========================================*/
+
+.consulting-process {
+  padding: 120px 8%;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbfd 100%);
+}
+
+.process-grid {
+  max-width: 1350px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.process-step {
+  background: white;
+  border-radius: 24px;
+  padding: 36px 28px;
+  text-align: center;
+  border: 1px solid #edf2f6;
+  transition: 0.35s;
+  position: relative;
+}
+
+.process-step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+.process-step span {
+  width: 62px;
+  height: 62px;
+  margin: auto auto 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #003b6d;
+  color: white;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.process-step h3 {
+  color: #16304d;
+  margin-bottom: 14px;
+  font-size: 1.15rem;
+}
+
+.process-step p {
+  color: #667684;
+  line-height: 1.75;
+  font-size: 0.95rem;
+}
+/*==========================================
+    WHY VAYUCON
+==========================================*/
+
+.why-vayucon {
+  padding: 120px 8%;
+  background: #ffffff;
+  position: relative;
+}
+
+.why-vayucon::before {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  left: -180px;
+  top: -220px;
+  border-radius: 50%;
+  background: rgba(0, 59, 109, 0.04);
+  filter: blur(20px);
+}
+
+.benefits-grid {
+  max-width: 1350px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.benefit-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #edf2f6;
+  border-radius: 24px;
+  padding: 40px 32px;
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.benefit-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(60, 176, 67, 0.04),
+    rgba(0, 59, 109, 0.05)
+  );
+  opacity: 0;
+  transition: 0.35s;
+}
+
+.benefit-card:hover::before {
+  opacity: 1;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-card h3 {
+  position: relative;
+  color: #16304d;
+  font-size: 1.25rem;
+  margin-bottom: 18px;
+}
+
+.benefit-card p {
+  position: relative;
+  color: #667684;
+  line-height: 1.85;
+  font-size: 0.96rem;
+}
+
+/*==========================================
+    CTA
+==========================================*/
+
+.consulting-cta {
+  padding: 140px 8%;
+  background: linear-gradient(135deg, #003b6d, #0b518f);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.consulting-cta::before {
+  content: "";
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  right: -260px;
+  top: -260px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.consulting-cta::after {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  left: -180px;
+  bottom: -220px;
+  background: rgba(60, 176, 67, 0.12);
+}
+
+.cta-content {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.consulting-cta .section-tag {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+}
+
+.cta-content h2 {
+  font-family: "Noto Serif", serif;
+  font-size: clamp(2.6rem, 4vw, 4rem);
+  margin: 24px 0;
+  line-height: 1.15;
+}
+
+.cta-content p {
+  max-width: 720px;
+  margin: auto;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.9;
+  font-size: 1.05rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.consulting-cta .primary-btn {
+  background: #3cb043;
+}
+
+.consulting-cta .primary-btn:hover {
+  background: #2f9638;
+}
+
+.consulting-cta .secondary-btn {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  background: transparent;
+}
+
+.consulting-cta .secondary-btn:hover {
+  background: white;
+  color: #003b6d;
+}
+/*==========================================
+    RESPONSIVE
+==========================================*/
+
+@media (max-width: 1200px) {
+  .hero-content,
+  .consulting-overview,
+  .expertise-section {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .hero-feature-grid,
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .expertise-content {
+    position: static;
+  }
+}
+
+@media (max-width: 992px) {
+  .consulting-hero,
+  .consulting-services,
+  .consulting-process,
+  .why-vayucon,
+  .consulting-cta {
+    padding: 100px 6%;
+  }
+
+  .consulting-overview,
+  .expertise-section {
+    padding: 0 6%;
+    margin: 100px auto;
+  }
+
+  .hero-left {
+    text-align: center;
+  }
+
+  .hero-description {
+    margin: auto;
+  }
+
+  .hero-buttons,
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .hero-right {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .overview-right,
+  .expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-feature-grid,
+  .services-grid,
+  .overview-right,
+  .expertise-grid,
+  .benefits-grid,
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-left h1 {
+    font-size: 2.8rem;
+  }
+
+  .section-heading h2,
+  .overview-left h2,
+  .expertise-content h2,
+  .cta-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-right {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card,
+  .service-card,
+  .highlight-card,
+  .expertise-item,
+  .benefit-card,
+  .process-step {
+    padding: 28px;
+  }
+
+  .hero-buttons,
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-buttons a,
+  .cta-buttons a {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .consulting-hero,
+  .consulting-services,
+  .consulting-process,
+  .why-vayucon,
+  .consulting-cta {
+    padding: 80px 5%;
+  }
+
+  .consulting-overview,
+  .expertise-section {
+    padding: 0 5%;
+    margin: 80px auto;
+  }
+
+  .hero-left h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-description,
+  .section-heading p,
+  .overview-left p,
+  .expertise-content p,
+  .cta-content p {
+    font-size: 0.95rem;
+  }
+
+  .hero-right {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-tag {
+    font-size: 0.75rem;
+    padding: 7px 15px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    padding: 14px 24px;
+    font-size: 0.95rem;
+  }
+}
+/*==========================================
+    SCROLL ANIMATIONS
+==========================================*/
+
+.hidden {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}

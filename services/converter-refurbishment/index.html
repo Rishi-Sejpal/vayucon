@@ -14,7 +14,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=open_in_new"
     />
-    <link rel="stylesheet" href="../../assets/css/home.css" />
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <link rel="stylesheet" href="../../assets/css/converter.css" />
   </head>
   <body>
     <!-----------------------------------NAVBAR------------------------>
@@ -32,10 +33,10 @@
         <a href="../../about/">About Us</a>
 
         <div class="dropdown">
-          <button class="dropdown-btn">
+          <a href="../../services" class="dropdown-btn">
             Our Services
             <span>▾</span>
-          </button>
+          </a>
 
           <div class="dropdown-menu">
             <a href="../../services/converter-refurbishment/">
@@ -50,10 +51,6 @@
               Renewable Energy Services
             </a>
 
-            <a href="../../services/technical-consulting/">
-              Technical Consulting
-            </a>
-
             <a href="../../services/marine-engineering/">
               Marine Engineering
             </a>
@@ -61,7 +58,7 @@
         </div>
       </div>
 
-      <a href="../../contact-us/" id="nav-contact">Contact Us</a>
+      <a href="../../contact/" id="nav-contact">Contact Us</a>
 
       <button class="hamburger">
         <span></span>
@@ -106,40 +103,325 @@
           Renewable Energy Services
         </a>
 
-        <a href="../../services/technical-consulting/">
-          Technical Consulting
-        </a>
-
         <a href="../../services/test-bench-solutions/">
           Test Bench Solutions
         </a>
 
         <a href="../../services/marine-engineering/"> Marine Engineering </a>
+        <a href="../../services/" id="view-all-button">View All</a>
       </div>
     </div>
 
     <!----------------------------------END NAVBAR--------------------->
+    <!---------------------------------CONTENT START--------------------->
 
-    <!-- Image SlideShow with welcome text -->
-    <div class="slidesContainer">
-      <div id="welcomeMessage">
-        <h3>VayuCon Renewables</h3>
-        <h4>
-          Converter Refurbishment | Wind | Solar | BESS | Marine Systems |
-          Technical Consulting
-        </h4>
-      </div>
-      <div class="imageSlides fade">
-        <img src="../../assets/images/solarpanels1.png" style="width: 100%" />
-      </div>
+    <div id="content">
+      <!-- ================= HERO ================= -->
 
-      <div class="imageSlides fade">
-        <img src="../../assets/images/solarpanels4.png" style="width: 100%" />
-      </div>
+      <section class="converter-hero">
+        <div class="hero-left">
+          <h1>Converter Refurbishment</h1>
+
+          <p>
+            We deliver comprehensive multi-brand converter refurbishment
+            solutions for renewable energy systems. Our expert team restores
+            critical power electronic equipment to reliable operating condition,
+            extending asset life while significantly reducing replacement costs
+            and downtime.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#overview" class="primary-btn"> Learn More </a>
+
+            <a href="../../contact/" class="secondary-btn"> Contact Us </a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="stat-card">
+            <h2>Multi-Brand</h2>
+            <p>Converter Support</p>
+          </div>
+
+          <div class="stat-card">
+            <h2>Lifecycle</h2>
+            <p>Extension Solutions</p>
+          </div>
+
+          <div class="stat-card">
+            <h2>Reduced</h2>
+            <p>Downtime</p>
+          </div>
+
+          <div class="stat-card">
+            <h2>Reliable</h2>
+            <p>Performance Validation</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= OVERVIEW ================= -->
+
+      <section class="converter-overview" id="overview">
+        <div class="overview-image">
+          <!-- Replace image -->
+          <img
+            src="images/converter-refurbishment.jpg"
+            alt="Converter Refurbishment"
+          />
+        </div>
+
+        <div class="overview-content">
+          <span class="section-tag"> Overview </span>
+
+          <h2>
+            Restore Performance.<br />
+            Extend Asset Life.
+          </h2>
+
+          <p>
+            We offer multi-brand converter refurbishment services. We specialize
+            in repairing, refurbishing and extending the life of critical power
+            electronic equipment for wind, solar and industrial applications.
+          </p>
+
+          <p>
+            Our expertise in converters, inverters, IGBT modules, control
+            electronics and associated subsystems enables customers to maximize
+            existing assets through rigorous diagnostics, quality repairs and
+            functional validation.
+          </p>
+
+          <div class="overview-highlights">
+            <div class="highlight">
+              <h4>✓ Reliable Repairs</h4>
+              <p>Quality-focused refurbishment with validated performance.</p>
+            </div>
+
+            <div class="highlight">
+              <h4>✓ Expert Diagnostics</h4>
+              <p>Detailed fault analysis before repair begins.</p>
+            </div>
+
+            <div class="highlight">
+              <h4>✓ Cost Effective</h4>
+              <p>Restore equipment instead of expensive replacements.</p>
+            </div>
+
+            <div class="highlight">
+              <h4>✓ Lifecycle Support</h4>
+              <p>Increase operational life of existing assets.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CAPABILITIES ================= -->
+
+      <section class="capabilities">
+        <div class="section-heading">
+          <span class="section-tag"> What We Do </span>
+
+          <h2>Our Capabilities</h2>
+
+          <p>
+            Comprehensive refurbishment services covering the complete converter
+            system.
+          </p>
+        </div>
+
+        <div class="capability-grid">
+          <div class="capability-card">
+            <h3>Converter Diagnostics</h3>
+            <p>Comprehensive inspection and fault identification.</p>
+          </div>
+
+          <div class="capability-card">
+            <h3>IGBT Stack Repair</h3>
+            <p>Repair and replacement of damaged IGBT assemblies.</p>
+          </div>
+
+          <div class="capability-card">
+            <h3>PCB Repair</h3>
+            <p>
+              Component level repair and restoration of control electronics.
+            </p>
+          </div>
+
+          <div class="capability-card">
+            <h3>C-Bank Replacement</h3>
+            <p>Replacement and refurbishment of capacitor bank assemblies.</p>
+          </div>
+
+          <div class="capability-card">
+            <h3>Gate Driver Repair</h3>
+            <p>Repair and replacement of gate driver circuitry.</p>
+          </div>
+
+          <div class="capability-card">
+            <h3>Cooling Systems</h3>
+            <p>Inspection and refurbishment of thermal management systems.</p>
+          </div>
+
+          <div class="capability-card">
+            <h3>Functional Testing</h3>
+            <p>Full validation before delivery.</p>
+          </div>
+
+          <div class="capability-card">
+            <h3>Alternate Components</h3>
+            <p>Development of equivalent replacement solutions.</p>
+          </div>
+
+          <div class="capability-card">
+            <h3>Performance Validation</h3>
+            <p>Testing under operating conditions.</p>
+          </div>
+
+          <div class="capability-card">
+            <h3>Failure Analysis</h3>
+            <p>FMEA documentation and root cause investigation.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EQUIPMENT ================= -->
+
+      <section class="equipment-section">
+        <div class="section-heading">
+          <span class="section-tag"> Equipment </span>
+
+          <h2>Repair & Refurbishment Coverage</h2>
+        </div>
+
+        <div class="equipment-grid">
+          <div class="equipment-item">
+            <h3>Wind Converters</h3>
+          </div>
+
+          <div class="equipment-item">
+            <h3>Solar Inverters</h3>
+          </div>
+
+          <div class="equipment-item">
+            <h3>Rectifiers</h3>
+          </div>
+
+          <div class="equipment-item">
+            <h3>Power Modules</h3>
+          </div>
+
+          <div class="equipment-item">
+            <h3>IGBT Assemblies</h3>
+          </div>
+
+          <div class="equipment-item">
+            <h3>Gate Drivers</h3>
+          </div>
+
+          <div class="equipment-item">
+            <h3>DC Link Components</h3>
+          </div>
+
+          <div class="equipment-item">
+            <h3>Control Electronics</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PROCESS ================= -->
+
+      <section class="process-section">
+        <div class="section-heading">
+          <span class="section-tag"> Workflow </span>
+
+          <h2>Our Refurbishment Process</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="step">
+            <span>01</span>
+            <h3>Inspection</h3>
+            <p>Equipment assessment and intake documentation.</p>
+          </div>
+
+          <div class="step">
+            <span>02</span>
+            <h3>Diagnostics</h3>
+            <p>Root cause analysis and performance evaluation.</p>
+          </div>
+
+          <div class="step">
+            <span>03</span>
+            <h3>Refurbishment</h3>
+            <p>Repair, replacement and restoration.</p>
+          </div>
+
+          <div class="step">
+            <span>04</span>
+            <h3>Validation</h3>
+            <p>Functional and performance testing.</p>
+          </div>
+
+          <div class="step">
+            <span>05</span>
+            <h3>Delivery</h3>
+            <p>Ready for reliable field operation.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= BENEFITS ================= -->
+
+      <section class="benefits-section">
+        <div class="section-heading">
+          <span class="section-tag"> Benefits </span>
+
+          <h2>Why Choose Refurbishment?</h2>
+        </div>
+
+        <div class="benefit-grid">
+          <div class="benefit-card">
+            <h3>Lower Repair Costs</h3>
+            <p>Significant savings compared to new equipment replacement.</p>
+          </div>
+
+          <div class="benefit-card">
+            <h3>Reduced Downtime</h3>
+            <p>Fast turnaround keeps operations running efficiently.</p>
+          </div>
+
+          <div class="benefit-card">
+            <h3>Extended Asset Life</h3>
+            <p>Increase operational lifespan of critical equipment.</p>
+          </div>
+
+          <div class="benefit-card">
+            <h3>Improved Reliability</h3>
+            <p>Validated repairs with dependable long-term performance.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CTA ================= -->
+
+      <section class="converter-cta">
+        <h2>Keep Your Renewable Assets Operating at Peak Performance</h2>
+
+        <p>
+          Speak with our engineering specialists to discuss refurbishment,
+          diagnostics and lifecycle extension solutions for your converter
+          systems.
+        </p>
+
+        <a href="../../contact/" class="primary-btn">
+          Request a Consultation
+        </a>
+      </section>
     </div>
 
-    <div id="content"></div>
-
+    <!-- CONTENT END -->
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-content">
         <h2>VAYUCON RENEWABLES</h2>
@@ -161,10 +443,18 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 VAYUCON RENEWABLES. All Rights Reserved.</p>
+        <p>&copy; 2026 VayuCon. All Rights Reserved.</p>
+        <div class="footer-collaboration">
+          <span>In Collaboration With</span>
+
+          <div class="partner-logos">
+            <img src="../../assets/images/hades_icon.png" alt="Partner 1" />
+          </div>
+        </div>
       </div>
     </footer>
 
-    <script src="../../assets/js/home.js"></script>
+    <script src="../../assets/js/global.js"></script>
+    <script src="../../assets/js/converter.js"></script>
   </body>
 </html>

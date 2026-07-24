@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../assets/images/favicon-96x96.png"
+    />
+    <title>VayuCon Renewables</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=open_in_new"
+    />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/contact.css" />
+  </head>
+  <body>
+    <!-----------------------------------NAVBAR------------------------>
+
+    <nav class="navbar">
+      <a href="/" class="logo-link">
+        <img
+          src="../assets/images/navicon.png"
+          alt="Company Logo"
+          class="logo"
+        />
+      </a>
+
+      <div class="nav-links">
+        <a href="../about/">About Us</a>
+
+        <div class="dropdown">
+          <a href="../services" class="dropdown-btn">
+            Our Services
+            <span>▾</span>
+          </a>
+
+          <div class="dropdown-menu">
+            <a href="../services/converter-refurbishment/">
+              Converter Refurbishment
+            </a>
+
+            <a href="../services/test-bench-solutions/">
+              Test Bench Solutions
+            </a>
+
+            <a href="../services/renewable-energy-services/">
+              Renewable Energy Services
+            </a>
+
+            <!-- <a href="../services/technical-consulting/">
+              Technical Consulting
+            </a> -->
+
+            <a href="../services/marine-engineering/"> Marine Engineering </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="../contact/" id="nav-contact">Contact Us</a>
+
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div class="mobile-overlay"></div>
+
+    <div class="mobile-pane">
+      <button class="close-menu">✕</button>
+
+      <!-- ================= MAIN MENU ================= -->
+
+      <div class="mobile-page active" id="mainMenu">
+        <a href="../about/"> About Us </a>
+
+        <button class="menu-btn" id="servicesBtn">
+          <span>Our Services</span>
+
+          <span>></span>
+        </button>
+
+        <a href="../contact/"> Contact Us </a>
+      </div>
+
+      <!-- ================= SERVICES ================= -->
+
+      <div class="mobile-page" id="servicesMenu">
+        <button class="back-btn" id="back1">
+          <span><</span>
+
+          <span>Back</span>
+        </button>
+
+        <a href="../services/converter-refurbishment/">
+          Converter Refurbishment
+        </a>
+
+        <a href="../services/renewable-energy-services/">
+          Renewable Energy Services
+        </a>
+
+        <a href="../services/test-bench-solutions/"> Test Bench Solutions </a>
+
+        <a href="../services/marine-engineering/"> Marine Engineering </a>
+        <a href="../../services/" id="view-all-button">View All</a>
+      </div>
+    </div>
+
+    <!----------------------------------END NAVBAR--------------------->
+    <!---------------------------------CONTENT START--------------------->
+
+    <div id="content">
+      <section class="contact-section">
+        <div class="contact-container">
+          <div class="section-header reveal">
+            <span class="section-tag"> GET IN TOUCH </span>
+
+            <h2>Let's Start a Conversation</h2>
+
+            <p>
+              Whether you require technical consultation, converter
+              refurbishment, renewable energy solutions, or marine engineering
+              support, our experts are ready to help.
+            </p>
+          </div>
+
+          <form
+            id="contactForm"
+            class="contact-form reveal"
+            autocomplete="on"
+            novalidate
+          >
+            <!-- Name -->
+
+            <div class="input-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                maxlength="80"
+                autocomplete="name"
+              />
+
+              <label for="name"> Full Name </label>
+
+              <span class="line"></span>
+            </div>
+
+            <div class="input-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                maxlength="120"
+                autocomplete="email"
+              />
+
+              <label for="email"> Email Address </label>
+
+              <span class="line"></span>
+            </div>
+
+            <!-- Company -->
+
+            <div class="input-group">
+              <input
+                type="text"
+                id="company"
+                name="company"
+                maxlength="100"
+                autocomplete="organization"
+                required
+              />
+
+              <label for="company"> Company </label>
+
+              <span class="line"></span>
+            </div>
+
+            <!-- Service -->
+
+            <div class="input-group">
+              <select id="service" name="service" required>
+                <option value="" selected disabled></option>
+
+                <option value="Converter Refurbishment">
+                  Converter Refurbishment
+                </option>
+
+                <option value="Renewable Energy">Renewable Energy</option>
+
+                <option value="Marine Engineering">Marine Engineering</option>
+
+                <option value="Test Bench Solutions">
+                  Test Bench Solutions
+                </option>
+
+                <option value="Technical Consultancy">
+                  Technical Consultancy
+                </option>
+              </select>
+
+              <label class="select-label"> Service Required </label>
+
+              <span class="line"></span>
+            </div>
+
+            <!-- Message -->
+
+            <div class="input-group">
+              <textarea
+                id="message"
+                name="message"
+                required
+                rows="6"
+                maxlength="3000"
+              ></textarea>
+
+              <label for="message"> Tell us about your project </label>
+
+              <span class="line"></span>
+            </div>
+
+            <!-- Character Counter -->
+
+            <div class="message-info">
+              <span id="characterCount"> 0 / 3000 </span>
+            </div>
+
+            <button class="submit-btn" type="submit">
+              <span> Send Enquiry </span>
+
+              <svg viewBox="0 0 24 24">
+                <path d="M5 12H19M19 12L13 6M19 12L13 18" />
+              </svg>
+            </button>
+
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- CONTENT END -->
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>VAYUCON RENEWABLES</h2>
+
+        <p class="tagline">Powering Reliability. Restoring Performance.</p>
+
+        <div class="services-list">
+          <span>Converter Refurbishment</span>
+          <span>Renewable Energy</span>
+          <span>Test Bench Solutions</span>
+          <span>Technical Consulting</span>
+        </div>
+
+        <div class="footer-buttons">
+          <a href="../services/" class="btn btn-outline">Services</a>
+          <a href="../contact/" class="btn btn-outline">Contact</a>
+          <a href="../about/" class="btn btn-outline">About Us</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 VayuCon. All Rights Reserved.</p>
+        <div class="footer-collaboration">
+          <span>In Collaboration With</span>
+
+          <div class="partner-logos">
+            <img src="../assets/images/hades_icon.png" alt="Partner 1" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/global.js"></script>
+    <script src="../assets/js/contact.js"></script>
+  </body>
+</html>

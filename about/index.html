@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../assets/images/favicon-96x96.png"
+    />
+    <title>VayuCon Renewables</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=open_in_new"
+    />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/about.css" />
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  </head>
+  <body>
+    <!-----------------------------------NAVBAR------------------------>
+
+    <nav class="navbar">
+      <a href="/" class="logo-link">
+        <img
+          src="../assets/images/navicon.png"
+          alt="Company Logo"
+          class="logo"
+        />
+      </a>
+
+      <div class="nav-links">
+        <a href="../about/">About Us</a>
+
+        <div class="dropdown">
+          <a href="../services" class="dropdown-btn">
+            Our Services
+            <span>▾</span>
+          </a>
+
+          <div class="dropdown-menu">
+            <a href="../services/converter-refurbishment/">
+              Converter Refurbishment
+            </a>
+
+            <a href="../services/test-bench-solutions/">
+              Test Bench Solutions
+            </a>
+
+            <a href="../services/renewable-energy-services/">
+              Renewable Energy Services
+            </a>
+
+            <a href="../services/marine-engineering/"> Marine Engineering </a>
+          </div>
+        </div>
+      </div>
+
+      <a href="../contact/" id="nav-contact">Contact Us</a>
+
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div class="mobile-overlay"></div>
+
+    <div class="mobile-pane">
+      <button class="close-menu">✕</button>
+
+      <!-- ================= MAIN MENU ================= -->
+
+      <div class="mobile-page active" id="mainMenu">
+        <a href="../about/"> About Us </a>
+
+        <button class="menu-btn" id="servicesBtn">
+          <span>Our Services</span>
+
+          <span>></span>
+        </button>
+
+        <a href="../contact/"> Contact Us </a>
+      </div>
+
+      <!-- ================= SERVICES ================= -->
+
+      <div class="mobile-page" id="servicesMenu">
+        <button class="back-btn" id="back1">
+          <span><</span>
+
+          <span>Back</span>
+        </button>
+
+        <a href="../services/converter-refurbishment/">
+          Converter Refurbishment
+        </a>
+
+        <a href="../services/renewable-energy-services/">
+          Renewable Energy Services
+        </a>
+
+        <a href="../services/test-bench-solutions/"> Test Bench Solutions </a>
+
+        <a href="../services/marine-engineering/"> Marine Engineering </a>
+        <a href="../../services/" id="view-all-button">View All</a>
+      </div>
+    </div>
+
+    <!----------------------------------END NAVBAR--------------------->
+    <!---------------------------------CONTENT START--------------------->
+    <div id="content">
+      <section id="about-intro">
+        <div class="about-container">
+          <h2>VayuCon Renewables</h2>
+
+          <p class="about-text">
+            We are an engineering company focused on enhancing the reliability
+            and performance of renewable energy assets and power electronic
+            systems.
+          </p>
+
+          <a href="/contact/" class="about-btn">Get in Touch</a>
+        </div>
+      </section>
+      <section id="expertise">
+        <div class="expertise-container">
+          <h2>Our Expertise</h2>
+
+          <div class="expertise-grid">
+            <div class="expertise-card">
+              Multi-brand Wind Turbine Converter Repairs & Refurbishment
+            </div>
+            <div class="expertise-card">
+              Multi-brand Inverter Repairs & Refurbishment
+            </div>
+            <div class="expertise-card">IGBT Replacement & Diagnostics</div>
+            <div class="expertise-card">
+              Development & Supply of Obsolete and Critical Spares
+            </div>
+            <div class="expertise-card">Test Bench Design & Modernization</div>
+            <div class="expertise-card">Marine Engineering</div>
+            <div class="expertise-card">
+              Due Diligence & Technical Consulting for the Renewable Energy
+              Sector
+            </div>
+            <div class="expertise-card">
+              Root Cause Analysis to Investigate Technical Issues
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mission-vision">
+        <div class="mv-container">
+          <div class="mv-wrapper">
+            <div class="mv-card mission">
+              <span class="mv-label">
+                <img src="../assets/images/mission.png" class="mv-icon" />
+                MISSION</span
+              >
+              <h3>Building Unbreakable Trust</h3>
+
+              <p>
+                To become a trusted engineering partner for all renewable energy
+                and power electronics solutions.
+              </p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="mv-card vision">
+              <span class="mv-label">
+                <img src="../assets/images/vision.png" class="mv-icon" />
+                VISION</span
+              >
+              <h3>Delivering Reliable Services</h3>
+
+              <p>
+                To deliver reliable, sustainable and innovative engineering
+                services that maximize asset availability and performance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Statistics -->
+
+      <section id="statistics">
+        <div class="stats-container">
+          <div class="stats-heading">
+            <p class="section-tag">Why VayuCon?</p>
+
+            <p>
+              Delivering reliable engineering solutions with a focus on quality,
+              innovation and long-term partnerships.
+            </p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <h3>20+</h3>
+
+              <span>Years of Experience</span>
+            </div>
+
+            <div class="stat-card">
+              <h3 style="color: green">↑40%</h3>
+
+              <span>Avg. Cost Saving</span>
+            </div>
+
+            <div class="stat-card">
+              <h3>500+</h3>
+
+              <span>Converters Serviced </span>
+            </div>
+
+            <!-- <div class="stat-card">
+              <h3>10+</h3>
+
+              <span>Countries Served</span>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- CONTENT END -->
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>VAYUCON RENEWABLES</h2>
+
+        <p class="tagline">Powering Reliability. Restoring Performance.</p>
+
+        <div class="services-list">
+          <span>Converter Refurbishment</span>
+          <span>Renewable Energy</span>
+          <span>Test Bench Solutions</span>
+          <span>Technical Consulting</span>
+        </div>
+
+        <div class="footer-buttons">
+          <a href="../services/" class="btn btn-outline">Services</a>
+          <a href="../contact/" class="btn btn-outline">Contact</a>
+          <a href="../about/" class="btn btn-outline">About Us</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 VayuCon. All Rights Reserved.</p>
+        <div class="footer-collaboration">
+          <span>In Collaboration With</span>
+
+          <div class="partner-logos">
+            <img src="../assets/images/hades_icon.png" alt="Partner 1" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/global.js"></script>
+  </body>
+</html>

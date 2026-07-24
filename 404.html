@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>404 | VayuCon Renewables</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        user-select: none;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: linear-gradient(180deg, #eef6ff, #ffffff);
+
+        position: relative;
+      }
+
+      /* Floating particles */
+
+      body::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        background-image: radial-gradient(circle, #6dbe45 2px, transparent 2px);
+
+        background-size: 90px 90px;
+        opacity: 0.12;
+
+        animation: particles 18s linear infinite;
+      }
+
+      @keyframes particles {
+        from {
+          transform: translateY(0);
+        }
+
+        to {
+          transform: translateY(-120px);
+        }
+      }
+
+      /* Background solar panels */
+
+      .panel {
+        position: absolute;
+
+        width: 140px;
+        height: 70px;
+
+        background: #1d4c97;
+
+        border-radius: 8px;
+
+        transform: skew(-18deg);
+
+        opacity: 0.08;
+
+        animation: float 10s ease-in-out infinite;
+      }
+
+      .panel:nth-child(1) {
+        top: 8%;
+        left: 8%;
+      }
+
+      .panel:nth-child(2) {
+        bottom: 10%;
+        right: 8%;
+        animation-delay: 2s;
+      }
+
+      .panel:nth-child(3) {
+        top: 65%;
+        left: 15%;
+        animation-delay: 4s;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0) skew(-18deg);
+        }
+
+        50% {
+          transform: translateY(-18px) skew(-18deg);
+        }
+      }
+
+      /* Wind Turbine */
+
+      .windmill {
+        position: absolute;
+        right: 8%;
+        top: 18%;
+        width: 120px;
+        height: 220px;
+
+        opacity: 0.14;
+      }
+
+      .pole {
+        position: absolute;
+        left: 58px;
+        top: 40px;
+
+        width: 6px;
+        height: 170px;
+
+        background: #154489;
+      }
+
+      .rotor {
+        position: absolute;
+        top: 28px;
+        left: 40px;
+
+        width: 42px;
+        height: 42px;
+
+        animation: spin 7s linear infinite;
+      }
+
+      .blade {
+        position: absolute;
+        width: 3px;
+        height: 48px;
+        background: #154489;
+
+        left: 20px;
+        top: -24px;
+
+        transform-origin: bottom center;
+      }
+
+      .blade:nth-child(2) {
+        transform: rotate(120deg);
+      }
+
+      .blade:nth-child(3) {
+        transform: rotate(240deg);
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* Card */
+
+      .container {
+        position: relative;
+
+        z-index: 2;
+
+        text-align: center;
+
+        max-width: 700px;
+
+        padding: 50px;
+      }
+
+      h1 {
+        font-family: "Merriweather", serif;
+
+        font-size: 170px;
+
+        color: #154489;
+
+        line-height: 1;
+
+        animation: bob 3s ease-in-out infinite;
+      }
+
+      @keyframes bob {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      h2 {
+        font-size: 42px;
+        color: #154489;
+        margin: 15px 0 25px;
+
+        font-family: "Merriweather", serif;
+      }
+
+      p {
+        font-size: 19px;
+
+        line-height: 1.8;
+
+        color: #666;
+
+        margin-bottom: 40px;
+      }
+
+      /* Buttons */
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        padding: 16px 36px;
+
+        border-radius: 50px;
+
+        text-decoration: none;
+
+        font-weight: 600;
+
+        transition: 0.3s;
+      }
+
+      .home {
+        background: #6dbe45;
+        color: white;
+
+        animation: pulse 2.2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(109, 190, 69, 0.5);
+        }
+
+        70% {
+          box-shadow: 0 0 0 18px rgba(109, 190, 69, 0);
+        }
+
+        100% {
+          box-shadow: 0 0 0 0 rgba(109, 190, 69, 0);
+        }
+      }
+
+      .home:hover {
+        transform: translateY(-4px);
+      }
+
+      .contact {
+        border: 2px solid #154489;
+        color: #154489;
+      }
+
+      .contact:hover {
+        background: #154489;
+        color: white;
+      }
+
+      /* Little rotating gear */
+
+      .gear {
+        position: absolute;
+
+        left: 10%;
+        bottom: 12%;
+
+        font-size: 70px;
+
+        opacity: 0.12;
+
+        animation: spin 12s linear infinite;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 110px;
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 17px;
+        }
+
+        .windmill {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="panel"></div>
+    <div class="panel"></div>
+    <div class="panel"></div>
+
+    <div class="windmill">
+      <div class="pole"></div>
+
+      <div class="rotor">
+        <div class="blade"></div>
+        <div class="blade"></div>
+        <div class="blade"></div>
+      </div>
+    </div>
+
+    <div class="gear">⚙</div>
+
+    <div class="container">
+      <h1>404</h1>
+
+      <h2>Looks like this page caught the wind.</h2>
+
+      <p>
+        The page you're looking for may have moved, been renamed, or simply
+        isn't available anymore. Let's get you back to where the energy is
+        flowing.
+      </p>
+
+      <div class="buttons">
+        <a href="/" class="btn home">Return Home</a>
+
+        <a href="./contact" class="btn contact">Contact Us</a>
+      </div>
+    </div>
+  </body>
+</html>

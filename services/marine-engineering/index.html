@@ -14,7 +14,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=open_in_new"
     />
-    <link rel="stylesheet" href="../../assets/css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <link rel="stylesheet" href="../../assets/css/marine.css" />
   </head>
   <body>
     <!-----------------------------------NAVBAR------------------------>
@@ -32,10 +37,10 @@
         <a href="../../about/">About Us</a>
 
         <div class="dropdown">
-          <button class="dropdown-btn">
+          <a href="../../services" class="dropdown-btn">
             Our Services
             <span>▾</span>
-          </button>
+          </a>
 
           <div class="dropdown-menu">
             <a href="../../services/converter-refurbishment/">
@@ -50,10 +55,6 @@
               Renewable Energy Services
             </a>
 
-            <a href="../../services/technical-consulting/">
-              Technical Consulting
-            </a>
-
             <a href="../../services/marine-engineering/">
               Marine Engineering
             </a>
@@ -61,7 +62,7 @@
         </div>
       </div>
 
-      <a href="../../contact-us/" id="nav-contact">Contact Us</a>
+      <a href="../../contact/" id="nav-contact">Contact Us</a>
 
       <button class="hamburger">
         <span></span>
@@ -106,40 +107,503 @@
           Renewable Energy Services
         </a>
 
-        <a href="../../services/technical-consulting/">
-          Technical Consulting
-        </a>
-
         <a href="../../services/test-bench-solutions/">
           Test Bench Solutions
         </a>
 
         <a href="../../services/marine-engineering/"> Marine Engineering </a>
+        <a href="../../services/" id="view-all-button">View All</a>
       </div>
     </div>
 
     <!----------------------------------END NAVBAR--------------------->
+    <!---------------------------------CONTENT START--------------------->
+    <div id="content">
+      <!-- ================= HERO ================= -->
 
-    <!-- Image SlideShow with welcome text -->
-    <div class="slidesContainer">
-      <div id="welcomeMessage">
-        <h3>VayuCon Renewables</h3>
-        <h4>
-          Converter Refurbishment | Wind | Solar | BESS | Marine Systems |
-          Technical Consulting
-        </h4>
-      </div>
-      <div class="imageSlides fade">
-        <img src="../../assets/images/solarpanels1.png" style="width: 100%" />
-      </div>
+      <section class="consulting-hero">
+        <div class="hero-content">
+          <div class="hero-left">
+            <h1>Marine Services</h1>
 
-      <div class="imageSlides fade">
-        <img src="../../assets/images/solarpanels4.png" style="width: 100%" />
-      </div>
+            <p class="hero-description">
+              We provide unbiased, manufacturer-independent engineering
+              consultancy for renewable energy and industrial power systems. Our
+              expert services help clients evaluate technical challenges,
+              improve equipment reliability, optimize operational performance
+              and make informed engineering decisions through practical
+              experience and analytical expertise.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#overview" class="primary-btn"> Explore Services </a>
+
+              <a href="../../contact/" class="secondary-btn"> Contact Us </a>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="stat-card">
+              <h2>Independent</h2>
+              <p>Engineering Advice</p>
+            </div>
+
+            <div class="stat-card">
+              <h2>Failure</h2>
+              <p>Analysis & Diagnostics</p>
+            </div>
+
+            <div class="stat-card">
+              <h2>Asset</h2>
+              <p>Performance Optimization</p>
+            </div>
+
+            <div class="stat-card">
+              <h2>Technical</h2>
+              <p>Audits & Assessments</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined"> search </span>
+            </div>
+
+            <div>
+              <h3>Failure Analysis</h3>
+
+              <p>
+                Root cause investigations with detailed engineering reports and
+                corrective recommendations.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined"> verified </span>
+            </div>
+
+            <div>
+              <h3>Technical Audits</h3>
+
+              <p>
+                Independent equipment assessments covering condition,
+                operational risk and remaining asset life.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined"> monitoring </span>
+            </div>
+
+            <div>
+              <h3>Condition Monitoring</h3>
+
+              <p>
+                Monitoring strategies and predictive maintenance solutions that
+                improve long-term equipment reliability.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined"> trending_up </span>
+            </div>
+
+            <div>
+              <h3>Performance Optimization</h3>
+
+              <p>
+                Data-driven engineering analysis focused on improving
+                efficiency, availability and system performance.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined"> analytics </span>
+            </div>
+
+            <div>
+              <h3>Reliability Studies</h3>
+
+              <p>
+                Reliability modelling, FMEA studies and lifecycle cost analysis
+                for critical engineering assets.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined"> groups </span>
+            </div>
+
+            <div>
+              <h3>Training & Knowledge</h3>
+
+              <p>
+                Technical workshops and engineering knowledge transfer tailored
+                to operations and maintenance teams.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= OVERVIEW ================= -->
+
+      <section class="consulting-overview" id="overview">
+        <div class="overview-left">
+          <span class="section-tag"> Overview </span>
+
+          <h2>
+            Independent Advice.
+            <br />
+            Practical Engineering.
+          </h2>
+
+          <p>
+            Our consulting services combine decades of engineering experience
+            with structured technical analysis to solve complex operational
+            challenges. We work across renewable energy, industrial power
+            electronics and electrical infrastructure, helping organizations
+            improve reliability, reduce operational risk and maximize long-term
+            asset value.
+          </p>
+
+          <p>
+            Every recommendation is developed independently and supported by
+            engineering evidence, ensuring practical, commercially viable and
+            technically robust solutions.
+          </p>
+        </div>
+
+        <div class="overview-right">
+          <div class="highlight-card">
+            <h3>Independent Assessments</h3>
+
+            <p>Objective engineering evaluations without manufacturer bias.</p>
+          </div>
+
+          <div class="highlight-card">
+            <h3>Technical Excellence</h3>
+
+            <p>
+              Practical engineering solutions backed by industry experience.
+            </p>
+          </div>
+
+          <div class="highlight-card">
+            <h3>Asset Optimization</h3>
+
+            <p>Maximize performance while extending equipment life.</p>
+          </div>
+
+          <div class="highlight-card">
+            <h3>Operational Reliability</h3>
+
+            <p>
+              Improve system availability through informed engineering
+              decisions.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ================= SERVICES ================= -->
+
+      <section class="consulting-services">
+        <div class="section-heading">
+          <span class="section-tag"> What We Do </span>
+
+          <h2>Engineering Consulting Services</h2>
+
+          <p>
+            We provide comprehensive technical consultancy that supports
+            engineering teams throughout the entire asset lifecycle—from
+            investigation and evaluation to optimization and implementation.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <span>01</span>
+
+            <h3>Failure Analysis</h3>
+
+            <p>
+              Root cause investigations using engineering methodologies,
+              operational data and component-level analysis to identify failures
+              and prevent recurrence.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <span>02</span>
+
+            <h3>Technical Audits</h3>
+
+            <p>
+              Independent engineering assessments that evaluate equipment
+              condition, operational risks and maintenance priorities.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <span>03</span>
+
+            <h3>Condition Monitoring</h3>
+
+            <p>
+              Development of monitoring strategies including sensor selection,
+              diagnostics and predictive maintenance planning.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <span>04</span>
+
+            <h3>Performance Optimization</h3>
+
+            <p>
+              Engineering analysis focused on improving efficiency, energy
+              yield, availability and operational performance.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <span>05</span>
+
+            <h3>Reliability Studies</h3>
+
+            <p>
+              Reliability modelling, FMEA, lifecycle assessments and maintenance
+              optimization for critical engineering assets.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <span>06</span>
+
+            <h3>Training & Knowledge Transfer</h3>
+
+            <p>
+              Customized technical workshops and engineering guidance for
+              operations, maintenance and project teams.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EXPERTISE ================= -->
+
+      <section class="expertise-section">
+        <div class="expertise-content">
+          <span class="section-tag"> Areas of Expertise </span>
+
+          <h2>Engineering Support Across Critical Systems</h2>
+
+          <p>
+            Our consultants combine field experience with advanced engineering
+            practices to support renewable energy developers, utilities,
+            manufacturers and industrial facilities.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+          <div class="expertise-item">
+            <h3>Renewable Energy</h3>
+            <p>
+              Wind turbines, solar plants, converters and electrical balance of
+              plant systems.
+            </p>
+          </div>
+
+          <div class="expertise-item">
+            <h3>Power Electronics</h3>
+            <p>
+              Inverters, converters, rectifiers, IGBT systems and associated
+              control electronics.
+            </p>
+          </div>
+
+          <div class="expertise-item">
+            <h3>Electrical Infrastructure</h3>
+            <p>
+              Distribution systems, switchgear, protection systems and power
+              quality assessments.
+            </p>
+          </div>
+
+          <div class="expertise-item">
+            <h3>Asset Reliability</h3>
+            <p>
+              Lifecycle extension strategies, maintenance optimization and
+              operational risk reduction.
+            </p>
+          </div>
+
+          <div class="expertise-item">
+            <h3>Technical Due Diligence</h3>
+            <p>
+              Independent engineering reviews supporting investment,
+              modernization and acquisition decisions.
+            </p>
+          </div>
+
+          <div class="expertise-item">
+            <h3>Operational Support</h3>
+            <p>
+              Commissioning assistance, troubleshooting and engineering support
+              during critical project phases.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PROCESS ================= -->
+
+      <section class="consulting-process">
+        <div class="section-heading">
+          <span class="section-tag"> Our Process </span>
+
+          <h2>A Structured Engineering Approach</h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <span>01</span>
+            <h3>Understand</h3>
+            <p>
+              Define project objectives, technical challenges and operational
+              expectations.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <span>02</span>
+            <h3>Evaluate</h3>
+            <p>
+              Review equipment, documentation and operating data using proven
+              engineering methodologies.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <span>03</span>
+            <h3>Analyse</h3>
+            <p>
+              Perform technical investigations, simulations and engineering
+              assessments.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <span>04</span>
+            <h3>Recommend</h3>
+            <p>
+              Deliver practical recommendations supported by technical evidence
+              and commercial considerations.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <span>05</span>
+            <h3>Support</h3>
+            <p>
+              Assist implementation, monitor progress and provide ongoing
+              engineering guidance.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ================= WHY VAYUCON ================= -->
+
+      <section class="why-vayucon">
+        <div class="section-heading">
+          <span class="section-tag"> Why Choose Us </span>
+
+          <h2>Trusted Engineering Expertise</h2>
+
+          <p>
+            Our consultancy combines technical excellence with practical
+            industry experience, delivering solutions that are independent,
+            data-driven and focused on long-term operational success.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <h3>Independent Engineering</h3>
+            <p>
+              Objective technical recommendations without manufacturer bias,
+              ensuring decisions are based solely on engineering merit.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <h3>Industry Experience</h3>
+            <p>
+              Extensive expertise across renewable energy, power electronics and
+              industrial electrical systems.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <h3>Risk Reduction</h3>
+            <p>
+              Identify technical risks early and implement strategies that
+              improve operational safety and equipment reliability.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <h3>Performance Focus</h3>
+            <p>
+              Practical engineering solutions designed to maximize efficiency,
+              availability and long-term asset value.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CTA ================= -->
+
+      <section class="consulting-cta">
+        <div class="cta-content">
+          <span class="section-tag"> Let's Work Together </span>
+
+          <h2>Make Better Engineering Decisions</h2>
+
+          <p>
+            Whether you require technical investigations, equipment assessments,
+            performance optimization or strategic engineering guidance, our
+            experts are ready to help you achieve reliable and sustainable
+            results.
+          </p>
+
+          <div class="cta-buttons">
+            <a href="../../contact/" class="primary-btn">
+              Request a Consultation
+            </a>
+
+            <a href="../../services/" class="secondary-btn">
+              Explore Our Services
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <div id="content"></div>
-
+    <!-- CONTENT END -->
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-content">
         <h2>VAYUCON RENEWABLES</h2>
@@ -161,10 +625,18 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 VAYUCON RENEWABLES. All Rights Reserved.</p>
+        <p>&copy; 2026 VayuCon. All Rights Reserved.</p>
+        <div class="footer-collaboration">
+          <span>In Collaboration With</span>
+
+          <div class="partner-logos">
+            <img src="../../assets/images/hades_icon.png" alt="Partner 1" />
+          </div>
+        </div>
       </div>
     </footer>
 
-    <script src="../../assets/js/home.js"></script>
+    <script src="../../assets/js/global.js"></script>
+    <script src="../../assets/js/marine.js"></script>
   </body>
 </html>
