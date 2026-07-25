@@ -135,6 +135,7 @@ INPUTS
 .input-group textarea,
 .input-group select {
   width: 100%;
+  box-sizing: border-box;
 
   padding: 16px 0 14px;
 

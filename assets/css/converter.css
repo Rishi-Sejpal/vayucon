@@ -953,6 +953,7 @@
   .primary-btn,
   .secondary-btn {
     width: 100%;
+    box-sizing: border-box;
   }
 
   .converter-cta {

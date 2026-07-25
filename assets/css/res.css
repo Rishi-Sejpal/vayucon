@@ -541,10 +541,12 @@ RESPONSIVE
   .hero-buttons {
     flex-direction: column;
     width: 100%;
+    box-sizing: border-box;
   }
 
   .hero-buttons a {
     width: 100%;
+    box-sizing: border-box;
     text-align: center;
   }
 
