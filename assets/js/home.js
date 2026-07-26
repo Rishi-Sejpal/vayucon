@@ -1,23 +1,45 @@
-// Image Carousel
-let slideIndex = 0;
-let slideDuration = 8; //Seconds
-showSlides();
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("imageSlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, slideDuration * 1000);
+const slides = document.querySelectorAll(".imageSlides");
+const dotsContainer = document.querySelector(".slide-dots");
+let current = 0;
+let timer;
+
+for (let i = 0; i < slides.length; i++) {
+  const dot = document.createElement("button");
+  dot.className = "slide-dot";
+  dot.setAttribute("aria-label", `Go to slide ${i + 1}`);
+  dot.addEventListener("click", () => goTo(i));
+  dotsContainer.appendChild(dot);
 }
 
-document.querySelectorAll(".card").forEach((element) => {11
+const dots = document.querySelectorAll(".slide-dot");
+
+function goTo(index) {
+  slides.forEach((s) => s.classList.remove("active"));
+  dots.forEach((d) => d.classList.remove("active"));
+  current = (index + slides.length) % slides.length;
+  slides[current].classList.add("active");
+  dots[current].classList.add("active");
+  resetTimer();
+}
+
+function next() {
+  goTo(current + 1);
+}
+
+function resetTimer() {
+  clearInterval(timer);
+  timer = setInterval(next, 6000);
+}
+
+const container = document.getElementById("slidesContainer");
+container.addEventListener("mouseenter", () => clearInterval(timer));
+container.addEventListener("mouseleave", resetTimer);
+
+goTo(0);
+
+document.querySelectorAll(".card").forEach((element) => {
   element.addEventListener("click", (event) => {
-    window.location.href = element.childNodes[5].href;
+    const link = element.querySelector("a");
+    if (link) window.location.href = link.href;
   });
 });

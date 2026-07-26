@@ -697,9 +697,9 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 24px;
+  text-align: center;
 
   box-sizing: border-box;
 
@@ -710,22 +710,7 @@ body {
   margin: 0;
 }
 
-.footer-collaboration {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
 
-.partner-logos {
-  display: flex;
-  align-items: center;
-}
-
-.partner-logos img {
-  height: 42px;
-  width: auto;
-  display: block;
-}
 /* ==========================================================
    FOOTER RESPONSIVE
 ========================================================== */
@@ -751,10 +736,6 @@ body {
     gap: 18px;
   }
 
-  .footer-collaboration {
-    flex-direction: column;
-    gap: 10px;
-  }
 }
 
 @media (max-width: 480px) {

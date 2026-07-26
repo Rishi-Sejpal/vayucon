@@ -285,6 +285,12 @@ a {
   align-items: center;
 }
 
+.overview-images {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .overview-image {
   border-radius: 22px;
 

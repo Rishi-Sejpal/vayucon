@@ -186,14 +186,6 @@
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.04);
 }
 
-.stat-card:nth-child(2) {
-  margin-top: 35px;
-}
-
-.stat-card:nth-child(3) {
-  margin-top: -35px;
-}
-
 .stat-card:hover {
   transform: translateY(-10px);
 
@@ -333,7 +325,7 @@
 }
 
 .section-heading h2,
-.overview-left h2,
+.overview-content h2,
 .expertise-content h2 {
   margin: 22px 0;
 
@@ -347,7 +339,7 @@
 }
 
 .section-heading p,
-.overview-left p,
+.overview-content p,
 .expertise-content p {
   color: #667684;
 
@@ -369,29 +361,45 @@
 
   display: grid;
 
-  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-columns: 1fr 1.15fr;
 
   gap: 80px;
 
   align-items: center;
 }
 
-.overview-left {
-  max-width: 640px;
+.overview-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
 }
 
-.overview-left p {
+.overview-image img {
+  width: 100%;
+  display: block;
+  border-radius: 24px;
+  transition: 0.5s ease;
+}
+
+.overview-image:hover img {
+  transform: scale(1.05);
+}
+
+.overview-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.overview-content p {
   margin-bottom: 24px;
 }
 
-/*---------------- RIGHT ----------------*/
-
-.overview-right {
+.overview-highlights {
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
-
   gap: 24px;
+  margin-top: 12px;
 }
 
 .highlight-card {
@@ -484,19 +492,7 @@
   font-size: 0.96rem;
 }
 
-/* staggered layout */
-
-.highlight-card:nth-child(2) {
-  margin-top: 40px;
-}
-
-.highlight-card:nth-child(3) {
-  margin-top: -40px;
-}
-
-.highlight-card:nth-child(4) {
-  margin-top: 25px;
-}
+/* cards fill the grid cell equally */
 /*==========================================
     SERVICES
 ==========================================*/
@@ -1402,7 +1398,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .overview-right,
+  .overview-highlights,
   .expertise-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1485,7 +1481,7 @@
 
   .hero-feature-grid,
   .services-grid,
-  .overview-right,
+  .overview-highlights,
   .expertise-grid,
   .benefits-grid,
   .process-grid {
@@ -1501,7 +1497,7 @@
   }
 
   .section-heading h2,
-  .overview-left h2,
+  .overview-content h2,
   .expertise-content h2,
   .cta-content h2 {
     font-size: 2.3rem;
@@ -1510,7 +1506,6 @@
   .hero-buttons,
   .cta-buttons {
     flex-direction: column;
-
     align-items: stretch;
   }
 
@@ -1548,7 +1543,7 @@
 
   .hero-description,
   .section-heading p,
-  .overview-left p,
+  .overview-content p,
   .expertise-content p,
   .cta-content p {
     font-size: 0.95rem;
@@ -1595,7 +1590,7 @@
   }
 
   .section-heading h2,
-  .overview-left h2,
+  .overview-content h2,
   .expertise-content h2,
   .cta-content h2 {
     font-size: 1.85rem;

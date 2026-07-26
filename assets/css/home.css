@@ -1,15 +1,28 @@
 .slidesContainer {
   position: relative;
   margin: auto;
-  height: clamp(25rem, 4vw, 45rem);
+  height: clamp(25rem, 45vw, 50rem);
   overflow: hidden;
   background-color: #111;
 }
 
-.imageSlides {
-  display: none;
+.slides-wrapper {
   position: relative;
   height: 100%;
+}
+
+.imageSlides {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.imageSlides.active {
+  opacity: 1;
 }
 
 .imageSlides::after {
@@ -26,28 +39,61 @@
   pointer-events: none;
 }
 
-.imageSlides img {
-  width: auto; /* Keeps its original width */
-  height: auto; /* Keeps its original height */
-  display: block; /* Removes extra space at the bottom */
+/* ---- Dots ---- */
+
+.slide-dots {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  gap: 10px;
 }
 
-.fade {
-  animation: fade 3s ease-in-out;
+.slide-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    transform 0.3s;
+  border: none;
 }
 
-@keyframes fade {
-  from {
-    opacity: 0.75;
-  }
-  to {
-    opacity: 1;
-  }
+.slide-dot.active {
+  background: #fff;
+  transform: scale(1.25);
 }
 
 @media (max-width: 800px) {
   .slidesContainer {
-    height: 55vw;
+    height: 50vw;
+  }
+
+  .slide-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .slide-btn.prev {
+    left: 10px;
+  }
+
+  .slide-btn.next {
+    right: 10px;
+  }
+
+  .slide-dots {
+    bottom: 15px;
+  }
+
+  .slide-dot {
+    width: 10px;
+    height: 10px;
   }
 }
 
@@ -125,13 +171,12 @@
 /* Services Widget*/
 
 #servicesWidget {
-  width: min(93%, 1500px);
-
+  width: 100%;
+  box-sizing: border-box;
   margin: 3rem auto;
 
-  display: flex;
-
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 
   background: linear-gradient(135deg, #5f72e4, #7387f0);
 
@@ -140,16 +185,14 @@
   -webkit-backdrop-filter: blur(9.8px);
   border: 1px solid rgba(37, 61, 228, 0.4);
 
-  justify-content: center;
-  gap: 2rem;
-  padding: 2.5rem;
+  gap: 1.5rem;
+  padding: 2rem;
   border-radius: 2rem;
 }
 
 #servicesWidgetTitle {
-  flex: 0 0 100%; /* occupy entire row */
+  grid-column: 1 / -1;
   margin: 0;
-  align-items: center;
   text-align: center;
   color: white;
   text-shadow:
@@ -159,9 +202,7 @@
 /* ---------------- Service Card ---------------- */
 
 .card {
-  flex: 1 1 clamp(280px, 28vw, 320px);
-  max-width: 320px;
-  min-height: 280px;
+  min-height: 260px;
 
   padding: 1.75rem;
 
@@ -284,17 +325,240 @@
   #services {
     padding: 4rem 1rem;
   }
-
-  .card {
-    max-width: 100%;
+}
+@media (max-width: 1100px) {
+  #servicesWidget {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 900px) {
-  #servicesWidget {
-    width: 75vw;
-  }
 
+@media (max-width: 700px) {
+  #servicesWidget {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  #servicesWidget {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
   .serviceButton {
     opacity: 1;
+  }
+}
+
+/*==========================================
+    WHY VAYUCON
+==========================================*/
+
+.why-vayucon,
+.industries-served {
+  position: relative;
+  overflow: hidden;
+  padding: 140px 8%;
+  background: #ffffff;
+}
+
+.why-vayucon::before {
+  content: "";
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  top: -280px;
+  left: -240px;
+  border-radius: 50%;
+  background: rgba(0, 59, 109, 0.04);
+  filter: blur(20px);
+}
+
+.why-vayucon::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  right: -180px;
+  bottom: -160px;
+  border-radius: 50%;
+  background: rgba(60, 176, 67, 0.06);
+  filter: blur(18px);
+}
+
+.industries-served::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  left: -180px;
+  bottom: -160px;
+  border-radius: 50%;
+  background: rgba(60, 176, 67, 0.06);
+  filter: blur(18px);
+}
+
+.industries-served::after {
+  content: "";
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  top: -280px;
+  right: -240px;
+  border-radius: 50%;
+  background: rgba(0, 59, 109, 0.04);
+  filter: blur(20px);
+}
+
+.section-heading {
+  max-width: 760px;
+  margin: 0 auto 75px;
+  text-align: center;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: rgba(60, 176, 67, 0.1);
+  color: #3cb043;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  margin: 22px 0;
+  font-family: "Noto Serif", serif;
+  font-size: clamp(2.3rem, 4vw, 3.6rem);
+  line-height: 1.15;
+  color: #16304d;
+}
+
+.section-heading p {
+  color: #667684;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.benefits-grid {
+  position: relative;
+  z-index: 2;
+  max-width: 1350px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.benefit-card {
+  position: relative;
+  overflow: hidden;
+  padding: 42px 34px;
+  background: #fff;
+  border-radius: 26px;
+  border: 1px solid #edf2f6;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.benefit-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #003b6d, #3cb043);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.35s;
+}
+
+.benefit-card::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  right: -70px;
+  top: -70px;
+  border-radius: 50%;
+  background: rgba(60, 176, 67, 0.05);
+  transition: 0.35s;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  border-color: #dbe6ee;
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-card:hover::before {
+  transform: scaleX(1);
+}
+
+.benefit-card:hover::after {
+  transform: scale(1.2);
+}
+
+.benefit-card h3 {
+  position: relative;
+  margin: 0 0 18px;
+  color: #16304d;
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+.benefit-card p {
+  position: relative;
+  margin: 0;
+  color: #667684;
+  line-height: 1.9;
+  font-size: 0.96rem;
+}
+
+.benefit-card:nth-child(2) {
+  margin-top: 35px;
+}
+
+.benefit-card:nth-child(3) {
+  margin-top: -20px;
+}
+
+.benefit-card:nth-child(4) {
+  margin-top: 25px;
+}
+
+@media (max-width: 1100px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .benefit-card:nth-child(2),
+  .benefit-card:nth-child(3),
+  .benefit-card:nth-child(4) {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-vayucon,
+  .industries-served {
+    padding: 80px 5%;
+  }
+
+  .benefit-card:nth-child(2),
+  .benefit-card:nth-child(3),
+  .benefit-card:nth-child(4) {
+    margin-top: 0;
   }
 }

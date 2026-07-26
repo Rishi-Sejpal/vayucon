@@ -61,7 +61,7 @@
             "@id": "https://vayucon.co.in/#organization",
             "name": "VayuCon Renewables",
             "url": "https://vayucon.co.in/",
-            "logo": "https://vayucon.co.in/assets/images/navicon.png",
+            "logo": "https://vayucon.co.in/assets/images/navicon.webp",
             "description": "Engineering solutions for renewable energy, converter refurbishment, marine electrical systems, power electronics and test bench development.",
             "email": "mailto:vayucon@outlook.com",
             "telephone": "+919886209595",
@@ -86,7 +86,7 @@
     <nav class="navbar">
       <a href="/" class="logo-link">
         <img
-          src="./assets/images/navicon.png"
+          src="./assets/images/navicon.webp"
           alt="Company Logo"
           class="logo"
         />
@@ -180,7 +180,7 @@
     <!----------------------------------END NAVBAR--------------------->
 
     <!-- Image SlideShow with welcome text -->
-    <div class="slidesContainer">
+    <div class="slidesContainer" id="slidesContainer">
       <div id="welcomeMessage">
         <h3>VayuCon Renewables</h3>
         <h4>
@@ -188,21 +188,34 @@
           Technical Consulting
         </h4>
       </div>
-      <div class="imageSlides fade">
-        <img
-          src="./assets/images/solarpanels1.webp"
-          style="width: 100%"
-          alt="Solar Panel Field"
-        />
+
+      <div class="slides-wrapper">
+        <div
+          class="imageSlides"
+          style="
+            background-image: url(./assets/images/icpic1.webp);
+            --bg: url(./assets/images/icpic1.webp);
+          "
+        ></div>
+
+        <div
+          class="imageSlides"
+          style="
+            background-image: url(./assets/images/icpic2.webp);
+            --bg: url(./assets/images/icpic2.webp);
+          "
+        ></div>
+
+        <div
+          class="imageSlides"
+          style="
+            background-image: url(./assets/images/icpic3.webp);
+            --bg: url(./assets/images/icpic3.webp);
+          "
+        ></div>
       </div>
 
-      <div class="imageSlides fade">
-        <img
-          src="./assets/images/solarpanels4.webp"
-          style="width: 100%"
-          alt="Solar Panel and Wind Turbine"
-        />
-      </div>
+      <div class="slide-dots"></div>
     </div>
 
     <div id="content">
@@ -230,7 +243,7 @@
           </a>
         </div>
         <div class="card">
-          <h2 class="cardTitle">Test Bench Solutions</h2>
+          <h2 class="cardTitle">Test Bench & IOT Solutions</h2>
           <p class="serviceDescription">
             Custom test systems designed for performance and precision. We
             deliver automated, reliable testing solutions with integrated
@@ -278,6 +291,53 @@
       </div>
     </div>
 
+    <!-- ================= INDUSTRIES SERVED ================= -->
+
+    <section class="industries-served">
+      <div class="section-heading">
+        <span class="section-tag"> Industries Served </span>
+        <h2>Sectors We Support</h2>
+        <p>
+          Our engineering solutions span across critical industries that demand
+          reliability, technical precision and operational excellence.
+        </p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <h3>Wind Energy</h3>
+          <p>
+            Comprehensive support for onshore and offshore wind farms —
+            converter refurbishment, troubleshooting and lifecycle management.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <h3>Solar Energy</h3>
+          <p>
+            Engineering services for photovoltaic plants including inverter
+            servicing, performance optimisation and system upgrades.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <h3>BESS & Storage</h3>
+          <p>
+            Technical expertise in battery energy storage systems — from power
+            converter integration to commissioning support.
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <h3>Marine & Offshore</h3>
+          <p>
+            Specialist marine electrical engineering for vessel operators,
+            shipyards and offshore energy installations worldwide.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- CONTENT END -->
     <!-- FOOTER -->
     <footer class="footer">
@@ -302,16 +362,6 @@
 
       <div class="footer-bottom">
         <p>&copy; 2026 VayuCon. All Rights Reserved.</p>
-        <div class="footer-collaboration">
-          <span>In Collaboration With</span>
-
-          <div class="partner-logos">
-            <img
-              src="../../assets/images/hades_icon.webp"
-              alt="Hades Partner Logo"
-            />
-          </div>
-        </div>
       </div>
     </footer>
 
