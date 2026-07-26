@@ -1,0 +1,10 @@
+# ==========================================
+# VayuCon Renewables - robots.txt
+# https://vayucon.co.in
+# ==========================================
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://vayucon.co.in/sitemap.xml

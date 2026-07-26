@@ -1,0 +1,5 @@
+# Redirect www → non-www
+https://www.vayucon.co.in/* https://vayucon.co.in/:splat 301!
+
+# Redirect all HTTP → HTTPS
+http://vayucon.co.in/* https://vayucon.co.in/:splat 301!
