@@ -10,9 +10,7 @@
   --transition: 0.3s ease;
 }
 
-/* FONTS IMPORTS */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900");
-/* End FONTS IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Gloria+Hallelujah&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+NO:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 html,
 body {
@@ -24,7 +22,7 @@ body {
   user-select: none;
   background: var(--white);
 
-  font-family: "Noto Serif", serif;
+  font-family: "Arimo", sans-serif;
 }
 
 /* ---------------- Navbar ---------------- */
@@ -710,7 +708,6 @@ body {
   margin: 0;
 }
 
-
 /* ==========================================================
    FOOTER RESPONSIVE
 ========================================================== */
@@ -735,7 +732,6 @@ body {
     text-align: center;
     gap: 18px;
   }
-
 }
 
 @media (max-width: 480px) {

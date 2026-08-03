@@ -88,7 +88,7 @@
 
   color: #16304d;
 
-  font-family: "Noto Serif", serif;
+  font-family: "Arimo", sans-serif;
 }
 
 .hero-description {
@@ -195,7 +195,7 @@
 .stat-card h2 {
   margin: 0 0 10px;
 
-  font-family: "Noto Serif", serif;
+  font-family: "Arimo", sans-serif;
 
   color: #003b6d;
 
@@ -329,7 +329,7 @@
 .expertise-content h2 {
   margin: 22px 0;
 
-  font-family: "Noto Serif", serif;
+  font-family: "Arimo", sans-serif;
 
   font-size: clamp(2.3rem, 4vw, 3.6rem);
 
@@ -1295,7 +1295,7 @@
 .cta-content h2 {
   margin: 26px 0;
 
-  font-family: "Noto Serif", serif;
+  font-family: "Arimo", sans-serif;
 
   font-size: clamp(2.7rem, 4vw, 4.2rem);
 
