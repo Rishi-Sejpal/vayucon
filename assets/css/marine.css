@@ -73,7 +73,7 @@
 
 .section-heading {
   max-width: 700px;
-  margin: 2rem auto 70px;
+  margin: 0 auto 70px;
   text-align: center;
 }
 
@@ -148,7 +148,7 @@
                 HERO
 =========================================*/
 
-.converter-hero {
+.marine-hero {
   display: grid;
 
   grid-template-columns: 1.3fr 0.9fr;
@@ -162,7 +162,7 @@
   position: relative;
 }
 
-.converter-hero::before {
+.marine-hero::before {
   content: "";
 
   position: absolute;
@@ -261,7 +261,7 @@
             OVERVIEW
 =========================================*/
 
-.converter-overview {
+.marine-overview {
   display: grid;
 
   grid-template-columns: 1fr 1.15fr;
@@ -269,6 +269,8 @@
   gap: 80px;
 
   align-items: center;
+
+  padding-bottom: 100px;
 }
 
 .overview-image {
@@ -365,13 +367,13 @@
             SCROLL EFFECT
 =========================================*/
 
-.converter-hero,
-.converter-overview,
+.marine-hero,
+.marine-overview,
 .capabilities,
 .equipment-section,
 .process-section,
 .benefits-section,
-.converter-cta {
+.marine-cta {
   opacity: 0;
 
   transform: translateY(40px);
@@ -392,8 +394,22 @@
   background: var(--bg);
 
   position: relative;
+}
 
-  margin-top: 100px;
+#content .capabilities {
+  width: 100%;
+
+  max-width: 100%;
+
+  margin: 0;
+
+  padding: 80px 5% 100px;
+}
+
+#content .capabilities .capability-grid {
+  width: min(1220px, 100%);
+
+  margin: 0 auto;
 }
 
 .capabilities::before {
@@ -413,7 +429,7 @@
 .capability-grid {
   display: grid;
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   gap: 26px;
 }
@@ -480,6 +496,43 @@
   color: var(--text);
 }
 
+.capability-card ul {
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+.capability-card li {
+  position: relative;
+
+  padding: 8px 0 8px 26px;
+
+  line-height: 1.7;
+
+  color: var(--text);
+
+  border-bottom: 1px dashed var(--border);
+}
+
+.capability-card li:last-child {
+  border-bottom: none;
+}
+
+.capability-card li::before {
+  content: "✓";
+
+  position: absolute;
+
+  left: 0;
+  top: 8px;
+
+  color: var(--accent);
+
+  font-weight: 700;
+}
+
 /*=========================================
             EQUIPMENT
 =========================================*/
@@ -512,15 +565,13 @@
   position: relative;
 }
 
-.equipment-icon {
-  display: inline-flex;
-
-  align-items: center;
-
-  justify-content: center;
+.equipment-item::before {
+  content: "";
 
   width: 60px;
   height: 60px;
+
+  display: block;
 
   margin: 0 auto 22px;
 
@@ -529,22 +580,6 @@
   background: var(--accent-light);
 
   border: 2px solid rgba(88, 193, 78, 0.15);
-
-  color: var(--primary);
-
-  font-size: 30px;
-
-  line-height: 1;
-
-  transition: var(--transition);
-}
-
-.equipment-item:hover .equipment-icon {
-  background: var(--accent);
-
-  border-color: var(--accent);
-
-  color: white;
 }
 
 .equipment-item::after {
@@ -588,7 +623,7 @@
             PROCESS
 =========================================*/
 
-#content .process-section {
+.process-section {
   background: var(--primary);
 
   color: white;
@@ -736,6 +771,26 @@
   position: relative;
 }
 
+#content .benefits-section {
+  margin-top: 80px;
+
+  padding-top: 80px;
+}
+
+.benefits-section::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 6px;
+
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+
 .benefit-grid {
   display: grid;
 
@@ -808,12 +863,12 @@
                 PARTNER
 =========================================*/
 
-.converter-partner {
+.marine-partner {
   text-align: center;
   padding: 70px 0;
 }
 
-.converter-partner .partner-content {
+.marine-partner .partner-content {
   max-width: 500px;
   margin: 0 auto;
   padding: 50px 40px;
@@ -822,7 +877,7 @@
   background: var(--bg);
 }
 
-.converter-partner .section-tag {
+.marine-partner .section-tag {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -834,15 +889,15 @@
   margin-bottom: 30px;
 }
 
-.converter-partner .section-tag::before,
-.converter-partner .section-tag::after {
+.marine-partner .section-tag::before,
+.marine-partner .section-tag::after {
   content: "";
   width: 45px;
   height: 2px;
   background: var(--accent);
 }
 
-.converter-partner .partner-logos img {
+.marine-partner .partner-logos img {
   max-width: 140px;
   height: auto;
   opacity: 0.8;
@@ -851,7 +906,7 @@
     transform 0.3s;
 }
 
-.converter-partner .partner-logos img:hover {
+.marine-partner .partner-logos img:hover {
   opacity: 1;
   transform: scale(1.05);
 }
@@ -860,7 +915,7 @@
                 CTA
 =========================================*/
 
-.converter-cta {
+.marine-cta {
   position: relative;
 
   margin: 120px auto;
@@ -876,7 +931,7 @@
   text-align: center;
 }
 
-.converter-cta::before {
+.marine-cta::before {
   content: "";
 
   position: absolute;
@@ -892,7 +947,7 @@
   background: rgba(255, 255, 255, 0.04);
 }
 
-.converter-cta::after {
+.marine-cta::after {
   content: "";
 
   position: absolute;
@@ -908,13 +963,13 @@
   background: rgba(88, 193, 78, 0.12);
 }
 
-.converter-cta > * {
+.marine-cta > * {
   position: relative;
 
   z-index: 2;
 }
 
-.converter-cta h2 {
+.marine-cta h2 {
   color: white;
 
   font-size: 3rem;
@@ -924,7 +979,7 @@
   margin-bottom: 25px;
 }
 
-.converter-cta p {
+.marine-cta p {
   max-width: 760px;
 
   margin: 0 auto 40px;
@@ -936,7 +991,7 @@
   font-size: 1.05rem;
 }
 
-.converter-cta .primary-btn {
+.marine-cta .primary-btn {
   background: white;
 
   color: var(--heading);
@@ -944,7 +999,7 @@
   padding: 16px 38px;
 }
 
-.converter-cta .primary-btn:hover {
+.marine-cta .primary-btn:hover {
   background: var(--accent);
 
   color: white;
@@ -955,8 +1010,7 @@
 =========================================*/
 
 @media (max-width: 1100px) {
-  .converter-hero,
-  .converter-overview {
+  .marine-hero {
     grid-template-columns: 1fr;
 
     gap: 50px;
@@ -984,6 +1038,12 @@
 @media (max-width: 768px) {
   #content section {
     width: 92%;
+  }
+
+  .marine-overview {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
   }
 
   .hero-left h1 {
@@ -1021,15 +1081,15 @@
     font-size: 1rem;
   }
 
-  .converter-cta {
+  .marine-cta {
     padding: 70px 35px;
   }
 
-  .converter-cta h2 {
+  .marine-cta h2 {
     font-size: 2.2rem;
   }
 
-  .converter-cta p {
+  .marine-cta p {
     font-size: 1rem;
   }
 }
@@ -1057,13 +1117,13 @@
     box-sizing: border-box;
   }
 
-  .converter-cta {
+  .marine-cta {
     padding: 60px 25px;
 
     border-radius: 16px;
   }
 
-  .converter-cta h2 {
+  .marine-cta h2 {
     font-size: 1.8rem;
   }
 
