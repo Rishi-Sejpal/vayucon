@@ -86,7 +86,7 @@
 
   line-height: 1.05;
 
-  color: #16304d;
+  color: #17335e;
 
   font-family: "Arimo", sans-serif;
 }
@@ -173,7 +173,7 @@
 
   grid-template-columns: repeat(2, 1fr);
 
-  gap: 24px;
+  gap: 18px;
 }
 
 .stat-card {
@@ -181,7 +181,7 @@
 
   border-radius: 26px;
 
-  padding: 40px 30px;
+  padding: 24px 20px;
 
   border: 1px solid #edf2f6;
 
@@ -199,13 +199,13 @@
 }
 
 .stat-card h2 {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
 
   font-family: "Arimo", sans-serif;
 
   color: #003b6d;
 
-  font-size: 1.9rem;
+  font-size: 1.5rem;
 
   line-height: 1.15;
 }
@@ -215,9 +215,9 @@
 
   color: #667684;
 
-  line-height: 1.8;
+  line-height: 1.6;
 
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 /*==========================================

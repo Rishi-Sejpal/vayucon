@@ -32,7 +32,7 @@
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 55px;
-  align-items: center;
+  align-items: start;
   position: relative;
   z-index: 2;
 }
@@ -40,13 +40,9 @@
 .hero-content h1 {
   font-size: 4rem;
   line-height: 1.1;
-  color: #0b2945;
+  color: #17335e;
   margin: 12px 0 20px;
   font-weight: 800;
-}
-
-.hero-content h1 span {
-  color: #00a651;
 }
 
 .hero-content p {
@@ -156,14 +152,14 @@ FEATURE CARDS
 .hero-features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+  gap: 16px;
 }
 
 .feature-card {
   background: #fff;
   border: 1px solid #e7edf3;
   border-radius: 18px;
-  padding: 24px;
+  padding: 18px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
   transition: 0.35s;
   position: relative;
@@ -178,25 +174,25 @@ FEATURE CARDS
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 46px;
-  height: 46px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   background: #edf7ff;
   color: #003b6d;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .feature-card h3 {
   color: #003b6d;
-  margin-bottom: 15px;
-  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 .feature-card p {
   color: #68727d;
-  line-height: 1.8;
-  font-size: 0.95rem;
+  line-height: 1.7;
+  font-size: 0.9rem;
 }
 
 /*==============================
