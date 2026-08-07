@@ -390,10 +390,10 @@
 
 .capabilities {
   background: var(--bg);
-
   position: relative;
-
   margin-top: 100px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .capabilities::before {
@@ -413,21 +413,23 @@
 .capability-grid {
   display: grid;
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 
-  gap: 26px;
+  gap: 20px;
 }
 
 .capability-card {
   background: white;
 
-  padding: 35px;
+  padding: 28px 20px;
 
   border: 1px solid var(--border);
 
   border-radius: var(--radius);
 
   position: relative;
+
+  text-align: center;
 
   transition: var(--transition);
 
@@ -442,21 +444,21 @@
   top: 0;
   left: 0;
 
-  width: 4px;
-  height: 100%;
+  width: 100%;
+  height: 4px;
 
   background: var(--accent);
 
-  transform: scaleY(0);
+  transform: scaleX(0);
 
-  transform-origin: top;
+  transform-origin: left;
 
   transition: 0.35s;
 }
 
 .capability-card:hover::before,
 .capability-card.active::before {
-  transform: scaleY(1);
+  transform: scaleX(1);
 }
 
 .capability-card:hover,
@@ -466,16 +468,52 @@
   transform: translateY(-6px);
 }
 
+.capability-icon {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 56px;
+  height: 56px;
+
+  margin-bottom: 16px;
+
+  border-radius: 50%;
+
+  background: #fff;
+
+  border: 1px solid var(--border);
+
+  color: #111;
+
+  font-size: 28px;
+
+  transition: var(--transition);
+}
+
+.capability-card:hover .capability-icon,
+.capability-card.active .capability-icon {
+  background: #111;
+
+  color: #fff;
+
+  border-color: #111;
+}
+
 .capability-card h3 {
   color: var(--heading);
 
-  font-size: 1.35rem;
+  font-size: 1.1rem;
 
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .capability-card p {
-  line-height: 1.9;
+  line-height: 1.7;
+
+  font-size: 0.9rem;
 
   color: var(--text);
 }
@@ -969,7 +1007,7 @@
   }
 
   .capability-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .equipment-grid {
@@ -1008,6 +1046,10 @@
 
   .equipment-grid {
     grid-template-columns: 1fr;
+  }
+
+  .capability-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .step {
@@ -1049,6 +1091,10 @@
 
   .hero-buttons {
     flex-direction: column;
+  }
+
+  .capability-grid {
+    grid-template-columns: 1fr;
   }
 
   .primary-btn,
