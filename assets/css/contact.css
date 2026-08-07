@@ -36,12 +36,41 @@ SECTION
   width: 100%;
   padding: 100px 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
 }
 
 .contact-container {
-  width: min(900px, 100%);
+  width: min(1200px, 100%);
+}
+
+.contact-section .contact-info-box {
+  width: 100%;
+  max-width: none;
+  margin-top: 45px;
+  align-items: flex-start;
+}
+
+.contact-section .contact-info-item {
+  flex: 1 1 220px;
+  min-width: 200px;
+}
+
+.contact-section .contact-info-item:last-child {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.contact-section .contact-info-heading {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .contact-section .contact-info-item {
+    flex: none;
+    min-width: 0;
+  }
 }
 
 /* ==========================================================

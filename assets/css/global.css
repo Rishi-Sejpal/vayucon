@@ -753,3 +753,121 @@ body {
   }
 }
 /* =======END FOOTER========== */
+
+/* ==========================================================
+   QUICK CONTACT BOX (About / Contact pages)
+========================================================== */
+
+.contact-info-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 18px 44px;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 28px 32px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #003b6d 0%, #00569b 100%);
+  border-radius: 18px;
+  border: 1px solid rgba(60, 176, 67, 0.5);
+  box-shadow: 0 16px 38px rgba(0, 59, 109, 0.3);
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 220px;
+}
+
+.contact-info-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(60, 176, 67, 0.15);
+  border: 1px solid rgba(60, 176, 67, 0.55);
+}
+
+.contact-info-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: #3cb043;
+}
+
+.contact-info-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.contact-info-heading {
+  flex: 0 0 100%;
+  margin: 0 0 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.contact-info-value {
+  display: block;
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.contact-info-value:hover {
+  color: #3cb043;
+}
+
+/* Subtle variant (About page) */
+
+.contact-info-box--subtle {
+  background: #fff;
+  border: 1px solid var(--borderGray);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.contact-info-box--subtle .contact-info-icon {
+  background: rgba(60, 176, 67, 0.08);
+  border-color: rgba(60, 176, 67, 0.3);
+}
+
+.contact-info-box--subtle .contact-info-label {
+  color: #98a2b3;
+}
+
+.contact-info-box--subtle .contact-info-heading {
+  color: var(--deepBlue);
+  text-align: center;
+}
+
+.contact-info-box--subtle .contact-info-value {
+  color: #334155;
+}
+
+.contact-info-box--subtle .contact-info-value:hover {
+  color: var(--electricGreen);
+}
+
+@media (max-width: 768px) {
+  .contact-info-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 24px;
+  }
+}

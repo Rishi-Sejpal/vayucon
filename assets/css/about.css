@@ -66,6 +66,20 @@
   }
 }
 
+.contact-info-box--subtle {
+  max-width: 1200px;
+  margin: 90px auto 70px;
+}
+
+.contact-info-box--subtle .contact-info-item {
+  flex: 1 1 280px;
+}
+
+.contact-info-box--subtle .contact-info-item:last-child {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
 #expertise {
   width: auto;
   background: #a4a5a883; /* Change to your preferred color */
