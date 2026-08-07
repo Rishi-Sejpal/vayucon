@@ -38,7 +38,7 @@ body {
 }
 
 section {
-  padding: 110px 0;
+  padding: 80px 0;
 }
 
 img {
@@ -62,7 +62,7 @@ a {
 
 .section-header {
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .section-label {
@@ -72,14 +72,14 @@ a {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .section-header h2 {
   font-size: clamp(2rem, 3vw, 3.2rem);
   color: var(--secondary);
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .section-header p {
@@ -96,7 +96,7 @@ a {
 .hero-buttons {
   display: flex;
   gap: 18px;
-  margin-top: 28px;
+  margin-top: 24px;
 }
 
 .primary-btn,
@@ -144,7 +144,7 @@ a {
 
   position: relative;
 
-  padding: 50px 0 30px;
+  padding: 40px 0 25px;
 }
 
 .tb-hero::before {
@@ -166,7 +166,7 @@ a {
 .hero-container {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: 55px;
+  gap: 40px;
   align-items: start;
 
   position: relative;
@@ -177,7 +177,7 @@ a {
   font-size: clamp(3rem, 5vw, 5rem);
   color: #17335e;
   line-height: 1.05;
-  margin: 12px 0 20px;
+  margin: 12px 0 16px;
 }
 
 .hero-left p {
@@ -282,7 +282,7 @@ a {
 
   grid-template-columns: 1fr 1fr;
 
-  gap: 70px;
+  gap: 50px;
 
   align-items: center;
 }
@@ -314,7 +314,7 @@ a {
 
   line-height: 2;
 
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
 .overview-list {
@@ -322,9 +322,9 @@ a {
 
   display: grid;
 
-  gap: 18px;
+  gap: 14px;
 
-  margin-top: 35px;
+  margin-top: 26px;
 }
 
 .overview-list li {
@@ -368,7 +368,7 @@ a {
 
   grid-template-columns: repeat(2, 1fr);
 
-  gap: 30px;
+  gap: 24px;
 }
 
 .service-card {
@@ -378,7 +378,7 @@ a {
 
   border-radius: 20px;
 
-  padding: 40px;
+  padding: 32px;
 
   transition: 0.35s;
 
@@ -416,10 +416,10 @@ a {
 }
 
 .service-icon {
-  width: 62px;
-  height: 62px;
+  width: 54px;
+  height: 54px;
 
-  border-radius: 16px;
+  border-radius: 14px;
 
   background: #eef6fb;
 
@@ -429,10 +429,10 @@ a {
   align-items: center;
   justify-content: center;
 
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 700;
 
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 
   transition: 0.35s;
 }
@@ -446,9 +446,9 @@ a {
 .service-card h3 {
   color: var(--secondary);
 
-  font-size: 1.35rem;
+  font-size: 1.3rem;
 
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .service-card p {
@@ -469,7 +469,7 @@ a {
 
   grid-template-columns: 1fr 1fr;
 
-  gap: 70px;
+  gap: 50px;
 
   align-items: center;
 }
@@ -497,7 +497,7 @@ a {
 
   line-height: 1.2;
 
-  margin: 15px 0 25px;
+  margin: 12px 0 18px;
 }
 
 .feature-content p {
@@ -505,17 +505,17 @@ a {
 
   line-height: 2;
 
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 }
 
 .feature-points {
   display: grid;
 
-  gap: 22px;
+  gap: 16px;
 }
 
 .point {
-  padding: 22px 26px;
+  padding: 18px 22px;
 
   background: white;
 
@@ -559,7 +559,7 @@ a {
 
   grid-template-columns: repeat(2, 1fr);
 
-  gap: 30px;
+  gap: 24px;
 }
 
 .modern-card {
@@ -569,7 +569,7 @@ a {
 
   border-radius: 20px;
 
-  padding: 40px;
+  padding: 32px;
 
   transition: 0.35s;
 
@@ -587,13 +587,13 @@ a {
 .modern-card h3 {
   color: var(--secondary);
 
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 
   position: relative;
 
-  padding-bottom: 14px;
+  padding-bottom: 12px;
 }
 
 .modern-card h3::after {
@@ -634,7 +634,7 @@ a {
 
   grid-template-columns: repeat(2, 1fr);
 
-  gap: 30px;
+  gap: 24px;
 }
 
 .validation-item {
@@ -644,7 +644,7 @@ a {
 
   border-radius: 18px;
 
-  padding: 35px;
+  padding: 28px;
 
   transition: 0.35s;
 }
@@ -660,9 +660,9 @@ a {
 .validation-item h3 {
   color: var(--secondary);
 
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 
-  font-size: 1.35rem;
+  font-size: 1.3rem;
 }
 
 .validation-item p {
@@ -686,7 +686,7 @@ a {
 
   grid-template-columns: repeat(4, 1fr);
 
-  gap: 30px;
+  gap: 24px;
 
   position: relative;
 }
@@ -700,7 +700,7 @@ a {
 
   border-radius: 20px;
 
-  padding: 40px 30px;
+  padding: 32px 26px;
 
   text-align: center;
 
@@ -718,10 +718,10 @@ a {
 }
 
 .process-step span {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
 
-  margin: 0 auto 25px;
+  margin: 0 auto 18px;
 
   border-radius: 50%;
 
@@ -733,7 +733,7 @@ a {
   align-items: center;
   justify-content: center;
 
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 700;
 
   transition: 0.35s;
@@ -748,9 +748,9 @@ a {
 .process-step h3 {
   color: var(--secondary);
 
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 
-  font-size: 1.3rem;
+  font-size: 1.25rem;
 }
 
 .process-step p {
@@ -764,7 +764,7 @@ a {
 ======================================*/
 
 .service-cta {
-  padding: 120px 0;
+  padding: 80px 0;
 
   background: white;
 }
@@ -777,7 +777,7 @@ a {
 
   border-radius: 28px;
 
-  padding: 80px;
+  padding: 60px;
 
   text-align: center;
 
@@ -813,13 +813,13 @@ a {
 
   font-size: clamp(2rem, 3vw, 3.4rem);
 
-  margin: 18px 0 25px;
+  margin: 14px 0 20px;
 }
 
 .cta-box p {
   max-width: 720px;
 
-  margin: 0 auto 40px;
+  margin: 0 auto 30px;
 
   line-height: 2;
 
@@ -854,7 +854,7 @@ a {
   .feature-band {
     grid-template-columns: 1fr;
 
-    gap: 40px;
+    gap: 32px;
   }
 
   .service-grid,
@@ -870,11 +870,11 @@ a {
 
 @media (max-width: 768px) {
   section {
-    padding: 80px 0;
+    padding: 65px 0;
   }
 
   .tb-hero {
-    padding: 50px 0 30px;
+    padding: 40px 0 25px;
   }
 
   .hero-buttons {
@@ -890,7 +890,7 @@ a {
   }
 
   .cta-box {
-    padding: 60px 30px;
+    padding: 48px 24px;
   }
 }
 
@@ -904,10 +904,10 @@ a {
   .modern-card,
   .validation-item,
   .process-step {
-    padding: 28px;
+    padding: 24px;
   }
 
   .section-header {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 }

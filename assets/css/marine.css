@@ -73,17 +73,17 @@
 
 .section-heading {
   max-width: 700px;
-  margin: 0 auto 70px;
+  margin: 0 auto 55px;
   text-align: center;
 }
 
 .section-heading h2 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: 700;
 
   color: var(--heading);
 
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 
   line-height: 1.15;
 }
@@ -153,11 +153,11 @@
 
   grid-template-columns: 1.3fr 0.9fr;
 
-  gap: 60px;
+  gap: 50px;
 
   align-items: center;
 
-  padding: 40px 0 30px;
+  padding: 30px 0 24px;
 
   position: relative;
 }
@@ -184,23 +184,23 @@
 }
 
 .hero-left h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
 
   color: var(--heading);
 
   line-height: 1.05;
 
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .hero-left p {
   max-width: 700px;
 
-  font-size: 1.08rem;
+  font-size: 1.05rem;
 
   line-height: 2;
 
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 }
 
 .hero-buttons {
@@ -230,7 +230,7 @@
 
   border-radius: var(--radius);
 
-  padding: 18px 20px;
+  padding: 14px 18px;
 
   border: 1px solid var(--border);
 
@@ -266,11 +266,11 @@
 
   grid-template-columns: 1fr 1.15fr;
 
-  gap: 80px;
+  gap: 60px;
 
   align-items: center;
 
-  padding-bottom: 100px;
+  padding-bottom: 70px;
 }
 
 .overview-image {
@@ -304,19 +304,19 @@
 }
 
 .overview-content h2 {
-  font-size: 3rem;
+  font-size: 2.6rem;
 
   line-height: 1.2;
 
   color: var(--heading);
 
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .overview-content p {
   line-height: 2;
 
-  margin-bottom: 22px;
+  margin-bottom: 16px;
 }
 
 /*=========================================
@@ -328,13 +328,13 @@
 
   grid-template-columns: repeat(2, 1fr);
 
-  gap: 20px;
+  gap: 18px;
 
-  margin-top: 35px;
+  margin-top: 26px;
 }
 
 .highlight {
-  padding: 22px;
+  padding: 18px;
 
   border-left: 3px solid var(--accent);
 
@@ -352,7 +352,7 @@
 .highlight h4 {
   color: var(--heading);
 
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .highlight p {
@@ -403,7 +403,7 @@
 
   margin: 0;
 
-  padding: 80px 5% 100px;
+  padding: 60px 5% 70px;
 }
 
 #content .capabilities .capability-grid {
@@ -431,13 +431,13 @@
 
   grid-template-columns: repeat(3, 1fr);
 
-  gap: 26px;
+  gap: 22px;
 }
 
 .capability-card {
   background: white;
 
-  padding: 35px;
+  padding: 28px;
 
   border: 1px solid var(--border);
 
@@ -485,9 +485,9 @@
 .capability-card h3 {
   color: var(--heading);
 
-  font-size: 1.35rem;
+  font-size: 1.25rem;
 
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .capability-card p {
@@ -507,7 +507,7 @@
 .capability-card li {
   position: relative;
 
-  padding: 8px 0 8px 26px;
+  padding: 6px 0 6px 26px;
 
   line-height: 1.7;
 
@@ -630,7 +630,7 @@
 
   border-radius: 28px;
 
-  margin-top: 120px;
+  margin-top: 80px;
 }
 
 .process-section .section-heading h2 {
@@ -654,9 +654,9 @@
   margin: auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+  gap: 16px;
   position: relative;
-  padding: 20px 0;
+  padding: 16px 0;
 }
 
 .step {
@@ -668,7 +668,7 @@
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 20px;
-  padding: 40px 18px 32px;
+  padding: 32px 16px 26px;
   transition: var(--transition);
   opacity: 0;
   transform: translateY(25px);
@@ -705,24 +705,24 @@
 }
 
 .step span {
-  width: 56px;
-  height: 56px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--accent), #4ab040);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   box-shadow: 0 4px 18px rgba(88, 193, 78, 0.3);
 }
 
 .step h3 {
   color: white;
-  margin: 0 0 10px;
-  font-size: 1.15rem;
+  margin: 0 0 8px;
+  font-size: 1.1rem;
   letter-spacing: 0.02em;
 }
 
@@ -772,9 +772,9 @@
 }
 
 #content .benefits-section {
-  margin-top: 80px;
+  margin-top: 60px;
 
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 .benefits-section::before {
@@ -796,17 +796,17 @@
 
   grid-template-columns: repeat(2, 1fr);
 
-  gap: 30px;
+  gap: 24px;
 }
 
 .benefit-card {
   display: flex;
 
-  gap: 22px;
+  gap: 18px;
 
   align-items: flex-start;
 
-  padding: 35px;
+  padding: 28px;
 
   background: white;
 
@@ -825,8 +825,8 @@
 .benefit-card::before {
   content: "✓";
 
-  min-width: 60px;
-  height: 60px;
+  min-width: 50px;
+  height: 50px;
 
   display: flex;
 
@@ -840,7 +840,7 @@
 
   color: var(--accent);
 
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 
   font-weight: 700;
 }
@@ -848,9 +848,9 @@
 .benefit-card h3 {
   color: var(--heading);
 
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .benefit-card p {
@@ -918,9 +918,9 @@
 .marine-cta {
   position: relative;
 
-  margin: 120px auto;
+  margin: 80px auto;
 
-  padding: 90px 70px;
+  padding: 70px 50px;
 
   border-radius: 20px;
 
@@ -972,17 +972,17 @@
 .marine-cta h2 {
   color: white;
 
-  font-size: 3rem;
+  font-size: 2.6rem;
 
   line-height: 1.2;
 
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
 .marine-cta p {
   max-width: 760px;
 
-  margin: 0 auto 40px;
+  margin: 0 auto 32px;
 
   color: rgba(255, 255, 255, 0.82);
 
@@ -1013,7 +1013,7 @@
   .marine-hero {
     grid-template-columns: 1fr;
 
-    gap: 50px;
+    gap: 40px;
   }
 
   .hero-right {
@@ -1043,19 +1043,19 @@
   .marine-overview {
     grid-template-columns: 1fr;
 
-    gap: 50px;
+    gap: 40px;
   }
 
   .hero-left h1 {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
 
   .section-heading h2 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
   }
 
   .overview-content h2 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
   }
 
   .hero-right {
@@ -1075,18 +1075,18 @@
   }
 
   .step span {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
 
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .marine-cta {
-    padding: 70px 35px;
+    padding: 56px 30px;
   }
 
   .marine-cta h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .marine-cta p {
@@ -1096,15 +1096,15 @@
 
 @media (max-width: 550px) {
   .hero-left h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .section-heading h2 {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 
   .overview-content h2 {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 
   .hero-buttons {
@@ -1118,13 +1118,13 @@
   }
 
   .marine-cta {
-    padding: 60px 25px;
+    padding: 50px 22px;
 
     border-radius: 16px;
   }
 
   .marine-cta h2 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .benefit-card {

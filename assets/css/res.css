@@ -3,7 +3,7 @@
 ==============================*/
 
 .renewable-hero {
-  padding: 50px 8% 40px;
+  padding: 40px 8% 30px;
   background:
     radial-gradient(
       circle at top right,
@@ -31,17 +31,17 @@
   margin: auto;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: 55px;
+  gap: 40px;
   align-items: start;
   position: relative;
   z-index: 2;
 }
 
 .hero-content h1 {
-  font-size: 4rem;
+  font-size: 3.6rem;
   line-height: 1.1;
   color: #17335e;
-  margin: 12px 0 20px;
+  margin: 12px 0 16px;
   font-weight: 800;
 }
 
@@ -55,7 +55,7 @@
 .hero-buttons {
   display: flex;
   gap: 18px;
-  margin-top: 30px;
+  margin-top: 24px;
   flex-wrap: wrap;
 }
 
@@ -78,14 +78,14 @@ SECTION LABEL
 
 .section-header {
   max-width: 760px;
-  margin: 0 auto 70px;
+  margin: 0 auto 50px;
   text-align: center;
 }
 
 .section-header h2 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   color: #0b2945;
-  margin: 18px 0;
+  margin: 14px 0;
 }
 
 .section-header p {
@@ -200,7 +200,7 @@ OVERVIEW
 ==============================*/
 
 .service-overview {
-  padding: 120px 8%;
+  padding: 80px 8%;
 }
 
 .overview-grid {
@@ -208,7 +208,7 @@ OVERVIEW
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 70px;
+  gap: 50px;
   align-items: center;
 }
 
@@ -232,13 +232,13 @@ OVERVIEW
 .overview-content {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 20px;
 }
 
 .overview-item {
   background: #fff;
   border: 1px solid #e8eef4;
-  padding: 30px;
+  padding: 24px;
   border-radius: 18px;
   transition: 0.3s;
 }
@@ -262,7 +262,7 @@ RENEWABLE SERVICES
 ==============================*/
 
 .renewable-services {
-  padding: 120px 8%;
+  padding: 80px 8%;
   background: #f8fafc;
 }
 
@@ -271,14 +271,14 @@ RENEWABLE SERVICES
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 24px;
 }
 
 .service-card {
   background: #fff;
   border: 1px solid #e7edf3;
   border-radius: 22px;
-  padding: 40px 35px;
+  padding: 30px 28px;
   transition: 0.35s;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
   position: relative;
@@ -308,21 +308,21 @@ RENEWABLE SERVICES
 }
 
 .service-icon {
-  width: 72px;
-  height: 72px;
-  border-radius: 18px;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
   background: #edf7ff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
-  margin-bottom: 28px;
+  font-size: 1.7rem;
+  margin-bottom: 20px;
 }
 
 .service-card h3 {
   color: #003b6d;
-  font-size: 1.45rem;
-  margin-bottom: 22px;
+  font-size: 1.35rem;
+  margin-bottom: 16px;
 }
 
 .service-card ul {
@@ -332,7 +332,7 @@ RENEWABLE SERVICES
 .service-card ul li {
   position: relative;
   padding-left: 26px;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   color: #68727d;
   line-height: 1.7;
 }
@@ -353,7 +353,7 @@ ENGINEERING PROCESS
 ==============================*/
 
 .engineering-process {
-  padding: 120px 8%;
+  padding: 80px 8%;
   background: #fff;
 }
 
@@ -362,14 +362,14 @@ ENGINEERING PROCESS
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 24px;
 }
 
 .process-step {
   background: #fff;
   border: 1px solid #e7edf3;
   border-radius: 20px;
-  padding: 45px 30px;
+  padding: 34px 26px;
   text-align: center;
   transition: 0.35s;
   position: relative;
@@ -385,20 +385,20 @@ ENGINEERING PROCESS
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 70px;
-  height: 70px;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   background: #003b6d;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .process-step h3 {
   color: #003b6d;
-  margin-bottom: 16px;
-  font-size: 1.3rem;
+  margin-bottom: 12px;
+  font-size: 1.25rem;
 }
 
 .process-step p {
@@ -412,14 +412,14 @@ CTA
 ==============================*/
 
 .service-cta {
-  padding: 120px 8%;
+  padding: 80px 8%;
 }
 
 .cta-box {
   max-width: 1200px;
   margin: auto;
   text-align: center;
-  padding: 80px 70px;
+  padding: 60px 50px;
   border-radius: 28px;
   background: linear-gradient(135deg, #003b6d, #0b2945);
   color: #fff;
@@ -445,8 +445,8 @@ CTA
 }
 
 .cta-box h2 {
-  font-size: 2.7rem;
-  margin: 25px 0;
+  font-size: 2.4rem;
+  margin: 20px 0;
   position: relative;
   z-index: 2;
 }
@@ -464,7 +464,7 @@ CTA
   justify-content: center;
   position: relative;
   z-index: 2;
-  margin-top: 45px;
+  margin-top: 34px;
 }
 
 .cta-box .btn-primary {
@@ -494,7 +494,7 @@ RESPONSIVE
   .hero-grid,
   .overview-grid {
     grid-template-columns: 1fr;
-    gap: 45px;
+    gap: 36px;
   }
 
   .hero-content {
@@ -529,11 +529,11 @@ RESPONSIVE
   .renewable-services,
   .engineering-process,
   .service-cta {
-    padding: 90px 6%;
+    padding: 70px 6%;
   }
 
   .renewable-hero {
-    padding: 50px 6% 40px;
+    padding: 40px 6% 30px;
   }
 
   .hero-content h1 {
@@ -567,11 +567,11 @@ RESPONSIVE
   }
 
   .cta-box {
-    padding: 60px 35px;
+    padding: 48px 30px;
   }
 
   .overview-content {
-    gap: 20px;
+    gap: 16px;
   }
 }
 
@@ -581,11 +581,11 @@ RESPONSIVE
   .renewable-services,
   .engineering-process,
   .service-cta {
-    padding: 70px 5%;
+    padding: 60px 5%;
   }
 
   .renewable-hero {
-    padding: 40px 5% 30px;
+    padding: 30px 5% 24px;
   }
 
   .hero-content h1 {
@@ -593,7 +593,7 @@ RESPONSIVE
   }
 
   .section-header {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   .section-header h2 {
@@ -604,23 +604,23 @@ RESPONSIVE
   .service-card,
   .process-step,
   .overview-item {
-    padding: 25px;
+    padding: 22px;
   }
 
   .service-icon {
-    width: 60px;
-    height: 60px;
-    font-size: 1.6rem;
+    width: 52px;
+    height: 52px;
+    font-size: 1.4rem;
   }
 
   .process-step span {
-    width: 56px;
-    height: 56px;
-    font-size: 1.1rem;
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
   }
 
   .cta-box {
-    padding: 50px 25px;
+    padding: 44px 22px;
   }
 
   .cta-box h2 {
