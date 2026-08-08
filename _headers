@@ -1,0 +1,32 @@
+# ==========================================================
+# VayuCon Renewables - Netlify Cache-Control Headers
+# https://vayucon.co.in
+# ==========================================================
+
+# ----------------------------------------------------------
+# HTML pages: always revalidate with the server (Netlify
+# returns 304 + ETag when unchanged, so revalidation is
+# cheap and content is never stale).
+# ----------------------------------------------------------
+/*
+  Cache-Control: no-cache
+
+# ----------------------------------------------------------
+# CSS & JavaScript: 1 week in browser cache, then serve
+# stale while revalidating in the background for up to 30
+# days. Efficient for repeat visits while limiting how long
+# an outdated stylesheet/script can persist.
+# NOTE: after editing a css/js file, bump the ?v= query
+# string in the HTML that references it to force refresh.
+# ----------------------------------------------------------
+/assets/css/*
+/assets/js/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=2592000
+
+# ----------------------------------------------------------
+# Images, icons and media: content rarely changes in place,
+# so cache for 1 year. If an image is replaced, add ?v= to
+# the <img> src to bypass stale copies.
+# ----------------------------------------------------------
+/assets/images/*
+  Cache-Control: public, max-age=31536000, immutable

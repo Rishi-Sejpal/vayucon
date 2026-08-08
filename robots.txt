@@ -1,10 +1,46 @@
-# ==========================================
+# ==========================================================
 # VayuCon Renewables - robots.txt
 # https://vayucon.co.in
-# ==========================================
+# ==========================================================
 
+# ----------------------------------------------------------
+# Default rule: allow all crawlers to index the entire site.
+# The site is fully public - no admin, staging or private
+# paths exist that should be hidden from search engines.
+# ----------------------------------------------------------
 User-agent: *
 Allow: /
 
+# ----------------------------------------------------------
+# Major search engines (explicit rules for clarity)
+# ----------------------------------------------------------
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# ----------------------------------------------------------
+# No Disallow rules are required.
+# If restricted content is added later, list it here, e.g.:
+#   Disallow: /admin/
+#   Disallow: /assets/private/
+# ----------------------------------------------------------
+
+# ----------------------------------------------------------
 # Sitemap
+# ----------------------------------------------------------
 Sitemap: https://vayucon.co.in/sitemap.xml
