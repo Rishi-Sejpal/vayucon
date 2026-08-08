@@ -68,7 +68,7 @@
 
 .contact-info-box--subtle {
   max-width: 1200px;
-  margin: 90px auto 70px;
+  margin: 15px auto 70px;
 }
 
 .contact-info-box--subtle .contact-info-item {
@@ -310,7 +310,7 @@
 
   border-radius: 22px;
 
-  padding: 45px 25px;
+  padding: 30px 20px;
 
   text-align: center;
 
@@ -324,15 +324,15 @@
 }
 
 .stat-card h3 {
-  font-size: 3rem;
+  font-size: 1.8rem;
 
   color: #2d66ff;
 
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 #industries .stat-card h3 {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 #industries .stat-card {
