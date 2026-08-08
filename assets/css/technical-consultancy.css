@@ -361,7 +361,7 @@
 .consulting-overview {
   max-width: 1350px;
 
-  margin: 90px auto;
+  margin: 40px auto;
 
   padding: 0 8%;
 
@@ -850,7 +850,7 @@
 
   overflow: hidden;
 
-  padding: 90px 8%;
+  padding: 40px 8%;
 
   background: linear-gradient(180deg, #ffffff 0%, #f7fafc 100%);
 }
