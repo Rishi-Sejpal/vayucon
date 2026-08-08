@@ -28,8 +28,6 @@ function resetMenus() {
   mainMenu.classList.add("active");
 
   servicesMenu.classList.remove("active");
-
-  tbMenu.classList.remove("active");
 }
 
 function closePane() {

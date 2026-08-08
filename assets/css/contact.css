@@ -134,22 +134,6 @@ FORM
   position: relative;
 }
 
-.row {
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-
-  gap: 28px;
-}
-
-/* ==========================================================
-HIDDEN HONEYPOT
-========================================================== */
-
-.hidden-field {
-  display: none;
-}
-
 /* ==========================================================
 INPUTS
 ========================================================== */
@@ -514,12 +498,6 @@ RESPONSIVE
 }
 
 @media (max-width: 768px) {
-  .row {
-    grid-template-columns: 1fr;
-
-    gap: 0;
-  }
-
   .section-header h2 {
     font-size: 2rem;
   }

@@ -872,58 +872,6 @@
 }
 
 /*=========================================
-                PARTNER
-=========================================*/
-
-.marine-partner {
-  text-align: center;
-  padding: 70px 0;
-}
-
-.marine-partner .partner-content {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 50px 40px;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--bg);
-}
-
-.marine-partner .section-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 30px;
-}
-
-.marine-partner .section-tag::before,
-.marine-partner .section-tag::after {
-  content: "";
-  width: 45px;
-  height: 2px;
-  background: var(--accent);
-}
-
-.marine-partner .partner-logos img {
-  max-width: 140px;
-  height: auto;
-  opacity: 0.8;
-  transition:
-    opacity 0.3s,
-    transform 0.3s;
-}
-
-.marine-partner .partner-logos img:hover {
-  opacity: 1;
-  transform: scale(1.05);
-}
-
-/*=========================================
                 CTA
 =========================================*/
 
