@@ -23,7 +23,7 @@
   margin-bottom: 40px;
 }
 
-.services-heading h2 {
+.services-heading h1 {
   font-size: clamp(2.2rem, 4vw, 3.5rem);
   color: #22315f;
   margin-bottom: 15px;

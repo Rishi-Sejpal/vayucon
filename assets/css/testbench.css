@@ -296,6 +296,7 @@ a {
 }
 
 .overview-image img {
+  height: auto;
   transition: 0.6s;
 }
 
@@ -477,6 +478,9 @@ a {
 }
 
 .feature-image img {
+  width: 100%;
+  height: auto;
+  display: block;
   transition: 0.6s;
 }
 
