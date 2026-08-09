@@ -10,6 +10,10 @@
 # ----------------------------------------------------------
 /*
   Cache-Control: no-cache
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), accelerometer=(), gyroscope=(), magnetometer=(), browsing-topics=()
 
 # ----------------------------------------------------------
 # CSS & JavaScript: 1 week in browser cache, then serve
