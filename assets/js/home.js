@@ -28,7 +28,7 @@ function next() {
 
 function resetTimer() {
   clearInterval(timer);
-  timer = setInterval(next, 6000);
+  timer = setInterval(next, 4000);
 }
 
 const container = document.getElementById("slidesContainer");

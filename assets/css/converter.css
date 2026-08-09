@@ -964,6 +964,26 @@
   color: white;
 }
 
+.converter-cta .hero-buttons {
+  justify-content: center;
+}
+
+.converter-cta .secondary-btn {
+  background: transparent;
+
+  border: 2px solid rgba(255, 255, 255, 0.45);
+
+  color: white;
+}
+
+.converter-cta .secondary-btn:hover {
+  background: white;
+
+  border-color: white;
+
+  color: var(--heading);
+}
+
 /*=========================================
         RESPONSIVE
 =========================================*/
